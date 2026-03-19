@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "generatedAt": "2026-03-19T16:22:55.727Z",
+    "generatedAt": "2026-03-19T16:28:27.116Z",
     "version": "1.0.0",
     "marketplace": "claude-code-marketplaces"
   },
   "stats": {
-    "totalAtoms": 17,
+    "totalAtoms": 19,
     "totalPlugins": 5,
     "byType": {
       "commands": 0,
       "agents": 5,
-      "skills": 9,
+      "skills": 10,
       "hooks": 1,
-      "mcps": 2
+      "mcps": 3
     }
   },
   "atoms": {
@@ -107,6 +107,12 @@
       },
       {
         "type": "skill",
+        "name": "nano-banana-pro",
+        "path": "atoms/skills/nano-banana-pro/SKILL.md",
+        "usedBy": []
+      },
+      {
+        "type": "skill",
         "name": "opendeepcrew-cli",
         "path": "atoms/skills/opendeepcrew-cli/SKILL.md",
         "usedBy": [
@@ -159,6 +165,12 @@
       {
         "type": "mcp",
         "name": "deepwiki",
+        "path": "atoms/mcps/mcp.json",
+        "usedBy": []
+      },
+      {
+        "type": "mcp",
+        "name": "promptx",
         "path": "atoms/mcps/mcp.json",
         "usedBy": []
       }
