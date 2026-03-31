@@ -17,7 +17,6 @@
 │   ├── executing-plans/        # 计划执行引擎
 │   ├── git-workspace-init/     # Git 工作空间初始化
 │   ├── opendeepcrew-cli/       # Marketplace 管理工具
-│   ├── skill-creator/          # 创建新 Skill
 │   ├── wiki-generator/         # 技术文档生成
 │   └── writing-plans/          # 实施计划编写
 ├── toolchain/       # opendeepcrew 工具链专属 Agents

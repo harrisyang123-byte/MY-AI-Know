@@ -36,7 +36,6 @@ film-directing          逐场景分镜设计
 film-visual-language    逐镜视觉校验（模式二）
        ↓
 nano-banana-prompts     图像提示词生成
-nano-banana-pro         图像生成执行
        ↓
 seedance-prompts        视频提示词生成
 ```

@@ -73,10 +73,11 @@ status: in_progress
 
 ### 阶段四：分镜构思 🔄 进行中
 
-**执行框架：** creative-architect 阶段四 + film-directing + film-visual-language（模式二）+ film-performance（模式二）
+**执行框架：** creative-architect 阶段四
 
 **已完成场景：**
-- ✓ 场景0（总理衙门审讯）— 17个镜头，约5分钟，待提示词生成
+- ✓ 场景0（总理衙门审讯）— 17个镜头，约5分钟，分镜稿已按新 checklist 重新设计
+- ✓ 场景A1（南京贡院初遇）— 8个镜头，约3分钟
 
 **待完成场景：**
 - [ ] 场景A1（南京贡院初遇）
@@ -136,19 +137,13 @@ examples/daqing-lihongzhang/
 **当上下文接近限制时，新对话应该：**
 
 1. 打开本 Spec 文件（PROJECT.spec.md）
-2. 查看"项目进度"部分，了解当前阶段和完成情况
-3. 查看"待修改"或"待开始"的任务列表
-4. 根据需要打开相应的交付物文档
+2. 查看"项目进度"部分，确认当前阶段和已完成/待完成的场景
+3. 调用 `creative-architect` agent，按阶段四的 checklist 继续执行
 
-**开始阶段四（分镜构思）的标准流程：**
-1. 打开 #[[file:00-scene-mapping.md]] 了解场景对应关系
-2. 打开 #[[file:03-art-direction.md]] 查看视觉元素清单
-3. 打开 #[[file:02-visual-style.md]] 了解视觉语言和表演风格
-4. 从[飞书文档](https://kcn2qwgwe377.feishu.cn/wiki/UWM1wWF6YinflVkVO6IceQysnuN)读取对应场景的台词
-5. 开始设计分镜
-
-**其他场景：**
-- 如果要修改艺术指导，打开 #[[file:03-art-direction-process.md]] 查看推导过程和决策依据
+**关键原则：**
+- 台词从飞书剧本按需提取（使用飞书 MCP，只读当前场景对应段落，不一次性加载全部）
+- 场景对应关系参考 #[[file:00-scene-mapping.md]]
+- 每个场景完成后更新本文件的进度
 
 ---
 
@@ -175,21 +170,10 @@ examples/daqing-lihongzhang/
 
 1. **读取项目状态**
    - 打开 PROJECT.spec.md，查看"阶段四"进度，确认已完成和待完成的场景
-   - 打开 #[[file:04-directing.md]]，了解已完成的分镜风格和格式
+## 下一步（给 Agent 的指令）
 
-2. **按需读取素材（每次只读当前场景）**
-   - 打开 #[[file:03-art-direction.md]]（视觉元素清单）
-   - 打开 #[[file:02-visual-style.md]]（视觉语言和表演风格）
-   - 使用飞书 MCP 只读取当前场景对应的剧本段落（不要一次性读取全部剧本）
-
-3. **执行分镜设计（creative-architect 阶段四流程）**
-   - 调用 film-directing + film-visual-language（模式二）+ film-performance（模式二）
-   - 每个场景走完：第零步（钩子）→ 第一步（估算镜头数）→ 第二步（轴线）→ 第三步（行动节拍）→ 第四步（完整分镜稿）→ 衔接检查
-   - 完成后追加到 04-directing.md，停下等待确认
-
-**关键原则：**
-- 台词必须从飞书剧本提取，不能自己编
-- 视觉元素必须符合 03-art-direction.md
-- 表演风格必须符合 02-visual-style.md（克制内敛为主）
-- 每完成一个场景就停下，等待确认
-- 按需读取剧本，不要一次性加载全部内容
+新对话开始时：
+1. 读取本文件，确认当前进度和待完成场景
+2. 调用 `creative-architect` agent，按阶段四 checklist 继续执行
+3. 台词按需从飞书提取（参考 #[[file:00-scene-mapping.md]] 的场景对应关系）
+4. 如需修改艺术指导，参考 #[[file:03-art-direction-process.md]]
