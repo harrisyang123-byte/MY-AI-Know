@@ -3,15 +3,11 @@ inclusion: auto
 description: 工程冷启动规则 + atoms 能力库使用原则
 ---
 
-## 冷启动检查清单
+## 冷启动
 
-每次新对话开始时，按顺序执行：
+每次新对话开始时，立即加载并执行 `atoms/01.CORE/agents/project-guide.md`。
 
-1. 读 `registry.json` — 了解所有可用 agent 和 skill 及其触发关键词
-2. 读 `workspace/memory/context.json` — 恢复上次的项目状态
-   - 如果 `active_project.name` 非空，主动提示用户："你有一个进行中的项目 [name]，当前在 [current_stage]，下一步是 [next_action]。要继续吗？"
-   - 如果为空，等待用户说明意图
-3. 根据用户意图，从 `registry.json` 的 `triggers` 字段匹配对应 agent
+不要等用户说话，不要自行判断，直接按 project-guide 的流程走。
 
 ## 使用 atoms 能力库
 
