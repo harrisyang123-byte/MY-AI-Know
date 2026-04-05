@@ -1,55 +1,76 @@
 # 02.DOMAINS/FILM — 电影创作垂直领域
 
-电影创作全流程的闭环板块。从叙事定调到 AI 视频生成，所有专属能力都在这里。
+电影创作全流程的闭环板块。两个 Agent 分工协作，覆盖从叙事到 AI 视频生成的完整链路。
 
-## 目录结构
+## 两个核心 Agent
 
-```
-FILM/
-├── agents/
-│   ├── creative-architect.md   # 电影全才创意大脑（叙事→视觉→美术→表演→分镜）
-│   └── prompt-alchemist.md     # 提示词翻译官（分镜稿→图像/视频提示词）
-├── skills/
-│   ├── film-narrative/         # 叙事定调（Save the Cat 节拍表）
-│   ├── film-visual-language/   # 视觉语言框架（景别/色彩/节奏）
-│   ├── film-art-direction/     # 美术指导（道具级视觉元素）
-│   ├── film-performance/       # 表演节奏（行动节拍/张力曲线）
-│   ├── film-directing/         # 分镜执行（Arijon 语法）
-│   ├── nano-banana-pro/        # 图像生成工具（Gemini 3 Pro）
-│   ├── nano-banana-prompts/    # 图像提示词生成
-│   └── seedance-prompts/       # 视频提示词生成（Seedance 2.0）
-└── README.md
-```
+**creative-architect** — 创意大脑
+负责从主题出发，走完叙事、视觉、美术、分镜的完整创作流程。输出可直接交给 prompt-alchemist 的分镜稿。
 
-## 完整创作流程
+**prompt-alchemist** — 技术翻译官
+接收分镜稿，逐镜生成 AI 图像提示词（Nano Banana）和视频提示词（Seedance 2.0）。
+
+## 标准创作流程
 
 ```
-film-narrative          叙事定调（节拍表 + 人物小传 + 场景清单）
-       ↓
-film-visual-language    全片视觉框架定调（模式一）
-film-performance        全片表演基准定调（模式一）
-       ↓
-film-art-direction      逐场景美术方案（道具级）
-       ↓
-film-performance        逐场景行动节拍（模式二）
-film-directing          逐场景分镜设计
-film-visual-language    逐镜视觉校验（模式二）
-       ↓
-nano-banana-prompts     图像提示词生成
-       ↓
-seedance-prompts        视频提示词生成
+用户
+ │
+ ▼
+creative-architect
+ ├── 阶段一：叙事定调（film-narrative）
+ │     Logline、人物小传、节拍表、核心场景清单
+ ├── 阶段二：全片定调（film-visual-language + film-performance）
+ │     视觉框架 + 表演基准
+ ├── 阶段三：艺术指导（film-art-direction）
+ │     逐场景道具/光线/服装
+ └── 阶段四：分镜构思（film-directing + film-performance + film-visual-language）
+       完整文字分镜稿 → 输出到 04-directing.md
+ │
+ ▼
+prompt-alchemist
+ ├── 阶段一：解读分镜稿，确认参考图资产
+ ├── 阶段二：逐镜生成图像提示词（nano-banana-prompts）
+ ├── 阶段三：逐镜生成视频提示词（seedance-prompts）
+ └── 阶段四：更新个人知识库
 ```
 
-## 调用的 CORE 层能力
+## 灵活入口
 
-- `/creative-workflow` — 探索→提案→实现的协作框架
-- `/brainstorming` — 创意探索（项目启动阶段）
+不需要从头走完整流程。以下场景都支持：
 
-## 领域知识库位置
+| 场景 | 操作 |
+|------|------|
+| 从头开始新项目 | 加载 `project-guide` → 初始化后加载 `creative-architect` |
+| 继续已有项目的分镜 | 加载 `creative-architect`，告诉他从哪个场景继续 |
+| 只对某几个分镜生成提示词 | 加载 `prompt-alchemist`，指定镜号范围 |
+| 重新生成某个场景的提示词 | 加载 `prompt-alchemist`，告诉他场景编号 |
+| 修改已有分镜 | 加载 `creative-architect`，告诉他要修改哪个场景 |
 
-各 Skill 的参考资料在对应 skill 目录的 `references/` 子目录内：
-- `film-art-direction/references/period-references.md` — 时代背景视觉参考
-- `film-directing/references/axis-crossing.md` — 越轴处理方案
-- `film-narrative/references/save-the-cat-beats.md` — 节拍定义
-- `nano-banana-prompts/references/my-best-practices.md` — 个人图像提示词知识库
-- `seedance-prompts/references/my-best-practices.md` — 个人视频提示词知识库
+## Skills 说明
+
+Skills 是 Agent 内部调用的执行模块，用户不需要直接调用。
+
+| Skill | 被哪个 Agent 调用 | 职责 |
+|-------|-----------------|------|
+| film-narrative | creative-architect 阶段一 | 叙事定调（Save the Cat 节拍表） |
+| film-visual-language | creative-architect 阶段二/四 | 视觉语言框架（景别/色彩/节奏） |
+| film-performance | creative-architect 阶段二/四 | 表演节奏（行动节拍/张力曲线） |
+| film-art-direction | creative-architect 阶段三 | 美术指导（道具级视觉元素） |
+| film-directing | creative-architect 阶段四 | 分镜执行（Arijon 语法） |
+| nano-banana-prompts | prompt-alchemist 阶段二 | 图像提示词生成 |
+| nano-banana-pro | prompt-alchemist 阶段二 | 图像生成工具（Gemini） |
+| seedance-prompts | prompt-alchemist 阶段三 | 视频提示词生成（Seedance 2.0） |
+
+## 项目文件结构
+
+每个 FILM 项目存放在 `examples/<project-slug>/`：
+
+```
+PROJECT.spec.md          # 项目状态、进度、关键决策记录
+00-scene-mapping.md      # 场景编号对应表（narrative 场景 ↔ 剧本场景）
+01-narrative.md          # 阶段一输出：叙事定调
+02-visual-style.md       # 阶段二输出：视听定调
+03-art-direction.md      # 阶段三输出：艺术指导（最终版，日常查看）
+03-art-direction-process.md  # 阶段三推导过程（仅修改时查看）
+04-directing.md          # 阶段四输出：完整分镜稿
+```

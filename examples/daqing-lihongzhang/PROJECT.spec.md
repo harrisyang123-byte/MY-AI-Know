@@ -16,6 +16,15 @@ status: in_progress
 - 叙事框架：现实线（1895年审讯）+ 回忆线（一生回忆）
 - 参考风格：《长安三万里》的双线结构
 
+**画风定义（重要）：**
+- 制作风格：追光动画，3D中国风动画，参考《长安三万里》（追光动画，2023）
+- 人物：3D动画风格化，轮廓感强，不追求真人写实
+- 环境/场景：超写实，光影、材质、空间感接近真实摄影级别
+- 提示词策略：
+  - 空间参考图（无人物）：photorealistic + cinematic lighting，场景超写实
+  - 带人物镜头：人物用动画风格描述，场景保持写实
+- 风格标签（固定）：`hyperrealistic environment, cinematic Chinese architecture, volumetric lighting, physically accurate lighting, in the visual style of Chang'an 30000 Miles background art, 3D Chinese animation aesthetic, Lights Animation Studio style`
+
 ---
 
 ## 项目进度

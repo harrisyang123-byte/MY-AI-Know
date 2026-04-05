@@ -1,0 +1,14 @@
+{
+  "_readme": "跨对话状态持久化。每次对话结束或切换阶段时更新此文件。AI 启动时读取以快速恢复上下文。",
+  "last_updated": "",
+  "active_project": {
+    "name": "",
+    "slug": "",
+    "path": "",
+    "domain": "",
+    "current_agent": "",
+    "current_stage": "",
+    "next_action": ""
+  },
+  "session_notes": ""
+}

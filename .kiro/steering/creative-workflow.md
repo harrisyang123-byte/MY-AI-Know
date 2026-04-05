@@ -27,6 +27,7 @@ description: 创意协作三阶段工作流：探索、提案、实现，规范 
 
 ## 当前项目上下文
 
-工作区：OpenDeepCrew marketplace（电影创作 + agent/skill 开发）
+工作区：个人 AI 能力库（atoms/ 双层架构）
+入口 agent：`project-guide`（新项目或继续项目时优先调用）
 活跃 plugin：film-creation（creative-architect、prompt-alchemist）
 活跃 skills：film-directing、creative-workflow、nano-banana-pro 等

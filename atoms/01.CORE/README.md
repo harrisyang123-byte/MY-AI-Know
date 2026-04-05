@@ -8,6 +8,7 @@
 01.CORE/
 ├── agents/          # 通用 Meta-Agents
 │   ├── matteo-collina.md       # Node.js 架构专家
+│   ├── project-guide.md        # 项目启动向导（新项目 & 继续项目）
 │   └── superpowers-dev.md      # 通用需求开发专家
 ├── skills/          # 通用元能力 Skills
 │   ├── agent-creator/          # 创建新 Agent

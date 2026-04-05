@@ -1,0 +1,54 @@
+---
+inclusion: auto
+description: FILM 域 Agent 协作规则——creative-architect 和 prompt-alchemist 的切换时机和衔接方式
+---
+
+# FILM 域工作流规则
+
+## 两个 Agent 的职责边界
+
+**creative-architect**：叙事 → 视觉 → 美术 → 分镜。输出 `04-directing.md`。
+**prompt-alchemist**：分镜稿 → 图像提示词 → 视频提示词。依赖 `04-directing.md` 作为输入。
+
+## Agent 切换规则
+
+### 何时从 creative-architect 切换到 prompt-alchemist
+
+以下任意条件满足时，提示用户可以切换：
+- 用户说"生成提示词"、"做提示词"、"转提示词"
+- 用户说"这个场景/分镜可以了"并且当前在阶段四
+- 用户明确说"切换到 prompt-alchemist"
+
+切换时，告知用户：
+```
+分镜已完成，可以切换到 prompt-alchemist 生成提示词了。
+说"加载 prompt-alchemist"即可，告诉他要处理哪些镜头（可以是全部，也可以指定镜号范围）。
+```
+
+### 何时从 prompt-alchemist 切换回 creative-architect
+
+- 用户说"修改分镜"、"改一下这个镜头的设计"
+- 用户说"回去改"、"切回 creative-architect"
+
+### 灵活入口：不需要从头走
+
+prompt-alchemist 可以在任意时机加载，不需要等 creative-architect 走完全部阶段：
+- 只有部分场景完成分镜 → 可以先对已完成的场景生成提示词
+- 想重新生成某个场景的提示词 → 直接告诉 prompt-alchemist 场景编号
+- 想对单个镜头重新生成 → 直接告诉 prompt-alchemist 镜号
+
+## 衔接时的上下文传递
+
+切换到 prompt-alchemist 时，它需要以下信息：
+1. `04-directing.md` — 分镜稿（必须）
+2. `02-visual-style.md` — 全片风格卡片（必须）
+3. `03-art-direction.md` — 视觉元素参考（必须）
+4. 用户指定的镜号范围（可选，不指定则处理全部）
+
+prompt-alchemist 启动时会主动读取这些文件，不需要用户手动提供。
+
+## 状态更新
+
+每次 agent 切换后，更新 `workspace/memory/context.json`：
+- `current_agent` 改为新 agent 名称
+- `next_action` 更新为当前 agent 的下一步
