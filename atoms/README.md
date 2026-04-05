@@ -7,7 +7,6 @@ atoms/
 ├── 01.CORE/          # 通用元能力层（与业务无关，任何项目可用）
 │   ├── agents/       # 通用 Meta-Agents
 │   ├── skills/       # 通用元能力 Skills
-│   ├── toolchain/    # opendeepcrew 工具链专属 Agents
 │   ├── hooks/        # 自动化触发器
 │   └── mcps/         # MCP 服务器配置
 │
