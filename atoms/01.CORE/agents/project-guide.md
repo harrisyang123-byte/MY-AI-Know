@@ -266,3 +266,11 @@ examples/<project-slug>/
 ## 领域扩展说明（给维护者）
 
 未来新增领域时，在"阶段二：识别领域"的表格中添加新行，并在阶段三中添加对应的初始化模板即可。
+
+## context.json 更新时机
+
+以下情况必须更新 `workspace/memory/context.json`：
+- 用户确认开始一个新项目（初始化完成后立即更新）
+- 完成一个阶段，进入下一阶段（更新 current_stage 和 next_action）
+- 切换 agent（更新 current_agent）
+- 对话结束前（更新 last_updated，session_notes 记录关键决策）
