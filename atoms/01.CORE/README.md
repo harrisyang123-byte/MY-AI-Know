@@ -17,13 +17,8 @@
 │   ├── creative-workflow/      # 探索→提案→实现协作框架
 │   ├── executing-plans/        # 计划执行引擎
 │   ├── git-workspace-init/     # Git 工作空间初始化
-│   ├── opendeepcrew-cli/       # Marketplace 管理工具
 │   ├── wiki-generator/         # 技术文档生成
 │   └── writing-plans/          # 实施计划编写
-├── toolchain/       # opendeepcrew 工具链专属 Agents
-│   ├── opendeepcrew-bug-fixer.md
-│   ├── opendeepcrew-product-dev.md
-│   └── opendeepcrew-qa.md
 ├── hooks/           # 自动化触发器
 └── mcps/            # MCP 服务器配置
 ```
