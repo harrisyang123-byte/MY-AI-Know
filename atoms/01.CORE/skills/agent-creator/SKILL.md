@@ -1,6 +1,6 @@
 ---
 name: agent-creator
-description: 创建和修改 Agent 的指南。当用户想要创建新的 Agent 或修改现有 Agent 时使用此 Skill。Agent 是定义 AI 角色、行为准则和工作流程的 Markdown 文件，存放在 marketplace 的 atoms/agents 目录下。
+description: 创建和修改 Agent 的指南。当用户想要创建新的 Agent 或修改现有 Agent 时使用此 Skill。Agent 是定义 AI 角色、行为准则和工作流程的 Markdown 文件，存放在 atoms/agents 目录下。
 ---
 
 # Agent Creator
@@ -19,41 +19,29 @@ description: 创建和修改 Agent 的指南。当用户想要创建新的 Agent
 
 从最关键的问题开始，避免一次问太多。
 
-### 2. 初始化 Agent
+### 2. 创建文件
 
-运行初始化脚本创建模板文件：
+根据 agent 所属领域，在对应目录下新建 `.md` 文件：
+- 通用 agent → `atoms/01.CORE/agents/<agent-name>.md`
+- FILM 域 agent → `atoms/02.DOMAINS/FILM/agents/<agent-name>.md`
 
-```bash
-python3 <skill-path>/scripts/init_agent.py <agent-name>
+按 `agent-format.md` 的模板结构填充内容。
+
+### 3. 注册到 registry
+
+在 `registry.json` 的 `agents` 数组中添加条目：
+
+```json
+{
+  "name": "<agent-name>",
+  "path": "atoms/<domain>/agents/<agent-name>.md",
+  "domain": "<CORE|FILM>",
+  "description": "<简短描述>",
+  "triggers": ["触发关键词1", "触发关键词2"]
+}
 ```
-
-文件将创建在当前工作目录下：`./<agent-name>.md`。
-
-### 3. 编写 Agent
-
-编辑生成的模板文件，填充以下内容：
-
-**Frontmatter：**
-- `name`：人类可读的显示名称
-- `description`：完整描述角色、能力和使用场景
-
-**正文结构：**
-- **Role 标题**：`# Role: <名称> — <副标题>`
-- **行为准则**：交流语言、流程控制规则、范围限定
-- **工作流程**：分阶段定义，每阶段结束用 `**⏸ 停下，等待用户确认。**`
-
-引用 Skill 时使用 `/<skill-name>` 格式，如 `/bugfix`、`/git-workspace-init`。
-
-### 4. 注册 Agent
-
-```bash
-opendeepcrew atom add ./<agent-name>.md --type agent --force
-```
-
-该命令会自动完成 git commit 和 marketplace 注册。
 
 ## 修改流程
 
-1. `opendeepcrew atom show agent <name>` — 读取目标 Agent 内容，保存到本地文件
-2. 根据用户需求修改内容
-3. `opendeepcrew atom add ./<agent-name>.md --type agent --force` — 覆盖更新到 marketplace
+1. 直接编辑对应的 agent `.md` 文件
+2. 如果改了 name、description 或 triggers，同步更新 `registry.json`
