@@ -53,6 +53,7 @@
     { "name": "bugfix",                "path": "atoms/01.CORE/skills/bugfix",                        "domain": "CORE" },
     { "name": "wiki-generator",        "path": "atoms/01.CORE/skills/wiki-generator",                "domain": "CORE" },
     { "name": "git-workspace-init",    "path": "atoms/01.CORE/skills/git-workspace-init",            "domain": "CORE" },
-    { "name": "agent-creator",         "path": "atoms/01.CORE/skills/agent-creator",                 "domain": "CORE" }
+    { "name": "agent-creator",         "path": "atoms/01.CORE/skills/agent-creator",                 "domain": "CORE" },
+    { "name": "skill-creator",         "path": "atoms/01.CORE/skills/skill-creator",                 "domain": "CORE" }
   ]
 }
