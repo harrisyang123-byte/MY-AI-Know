@@ -1,7 +1,7 @@
 {
   "_readme": "跨对话状态持久化。每次对话结束或切换阶段时更新此文件。AI 启动时读取以快速恢复上下文。",
   "repo_root": ".marketplace-cache/repo",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-06",
   "active_project": {
     "name": "大清李鸿章",
     "slug": "daqing-lihongzhang",
@@ -9,7 +9,7 @@
     "domain": "FILM",
     "current_agent": "creative-architect",
     "current_stage": "阶段四：分镜构思",
-    "next_action": "继续场景A2a（南京放榜）分镜稿"
+    "next_action": "继续S04（放榜·江边分别）分镜稿"
   },
-  "session_notes": "场景0（17镜）和场景A1（8镜）已完成。待完成：A2a-A2f、B1、B2、C、D、E、F、G、H、I。待确认问题：场景G樱花饱和度、场景A2f花海镜头方案、场景F望远镜碎裂特写。"
+  "session_notes": "S01（7镜）、S02（8镜）、S03（7镜）已完成。待完成：S04-S17。场景编号已统一为narrative的S01-S17编号（不再使用旧的A2a等编号）。待确认问题：场景G樱花饱和度、S09花海镜头方案、S15望远镜碎裂特写。"
 }

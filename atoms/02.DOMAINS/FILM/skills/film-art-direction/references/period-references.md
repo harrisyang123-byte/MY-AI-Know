@@ -43,6 +43,21 @@
 
 ---
 
+## 晚清官署建筑细节（1860-1900）
+
+**内室格扇门（双开，非大门）**
+- 门体：双开格扇门。上半部分直棂方格窗，糊半透明高丽纸（泛黄、微有破洞）；下半部分实心木板，朱红漆褪色剥落，露出木胎，有常年开关磨损痕迹
+- 五金：门轴、门环黄铜制，氧化发黑带铜绿；门环素面圆环（非兽首衔环）；暗锁和门插销铜制，样式简单实用
+- 门框与门槛：深色硬木（榆木/松木），漆面磨损；门楣无匾额，只有横梁；门槛约20cm高，方便人员和文书进出
+- 与官署大门的区别：内室门无兽首衔环、无高门槛、无匾额，更实用朴素
+
+**提示词关键词（已验证）：**
+```
+late Qing dynasty interior double-panel géshanmén door, upper half straight-lattice grid window panels with yellowed semi-transparent Korean paper (slight aging, minor tears), lower half solid wood panels with faded and peeling vermillion lacquer revealing bare wood grain underneath, worn from years of use. Brass door hinges and plain ring door knockers, oxidized dark with patina. Simple functional brass lock and bolt. Dark hardwood door frame (elm or pine), worn lacquer surface, plain lintel beam above with no plaque. Low threshold approximately 20cm, practical interior door not a ceremonial gate.
+```
+
+---
+
 ## 古代中国（明清时期）
 
 **建筑与场景**
