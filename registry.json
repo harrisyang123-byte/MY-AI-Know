@@ -43,6 +43,7 @@
     { "name": "film-art-direction",    "path": "atoms/02.DOMAINS/FILM/skills/film-art-direction",    "domain": "FILM" },
     { "name": "film-performance",      "path": "atoms/02.DOMAINS/FILM/skills/film-performance",      "domain": "FILM" },
     { "name": "film-directing",        "path": "atoms/02.DOMAINS/FILM/skills/film-directing",        "domain": "FILM" },
+    { "name": "film-editing",          "path": "atoms/02.DOMAINS/FILM/skills/film-editing",          "domain": "FILM" },
     { "name": "nano-banana-prompts",   "path": "atoms/02.DOMAINS/FILM/skills/nano-banana-prompts",   "domain": "FILM" },
     { "name": "nano-banana-pro",       "path": "atoms/02.DOMAINS/FILM/skills/nano-banana-pro",       "domain": "FILM" },
     { "name": "seedance-prompts",      "path": "atoms/02.DOMAINS/FILM/skills/seedance-prompts",      "domain": "FILM" },
