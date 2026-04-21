@@ -1,4 +1,5 @@
-# Qinglv — AI 图片生成提示词
+Access Key: ak_54120222e9e125a38090f4ca3f3b857b
+Secret Key: sk_df82cc90459f471e6fb4f8081dbfc20fd9e17e046f4bf37dcc0f65c6a3d90c81  lovart# Qinglv — AI 图片生成提示词
 
 > 本文档包含角色三视图提示词和各场景的图片生成提示词。
 > 角色外形以本文档为准，所有场景图片必须保持角色一致性。
