@@ -1,0 +1,71 @@
+{
+  "_readme": "全局 Agent & Skill 索引。AI 启动时读取此文件了解所有可用能力。新增 agent/skill 后手动更新此文件。",
+  "agents": [
+    {
+      "name": "project-guide",
+      "path": "atoms/01.CORE/agents/project-guide.md",
+      "domain": "CORE",
+      "description": "项目启动向导。新项目初始化或继续已有项目的入口，识别领域后交棒给对应 agent。",
+      "triggers": ["新项目", "继续项目", "不知道从哪开始", "帮我启动", "项目向导"]
+    },
+    {
+      "name": "creative-architect",
+      "path": "atoms/02.DOMAINS/FILM/agents/creative-architect.md",
+      "domain": "FILM",
+      "description": "电影创作全才。负责叙事定调、视听定调、美术指导、分镜构思的完整流程。",
+      "triggers": ["电影创作", "叙事", "分镜", "美术指导", "视觉定调"]
+    },
+    {
+      "name": "prompt-alchemist",
+      "path": "atoms/02.DOMAINS/FILM/agents/prompt-alchemist.md",
+      "domain": "FILM",
+      "description": "提示词翻译官。将分镜稿转换为 AI 图像/视频生成提示词。",
+      "triggers": ["提示词", "图像生成", "视频生成", "nano-banana", "seedance", "生成提示词", "做提示词", "转提示词"]
+    },
+    {
+      "name": "superpowers-dev",
+      "path": "atoms/01.CORE/agents/superpowers-dev.md",
+      "domain": "CORE",
+      "description": "通用代码开发专家。支持任意 Git 仓库，从需求到代码提交的完整流程。",
+      "triggers": ["开发需求", "写代码", "git仓库", "功能开发"]
+    },
+    {
+      "name": "matteo-collina",
+      "path": "atoms/01.CORE/agents/matteo-collina.md",
+      "domain": "CORE",
+      "description": "Node.js 架构专家。",
+      "triggers": ["nodejs", "node.js", "架构设计", "性能优化"]
+    },
+    {
+      "name": "knowledge-architect",
+      "path": "atoms/02.DOMAINS/KNOWLEDGE/agents/knowledge-architect.md",
+      "domain": "KNOWLEDGE",
+      "description": "知识构建总架构师。负责知识图谱构建、原子笔记管理、知识可视化、智能标签与摘要的完整流程。",
+      "triggers": ["构建知识体系", "整理笔记", "生成知识图谱", "创建原子笔记", "知识管理", "知识构建"]
+    }
+  ],
+  "skills": [
+    { "name": "film-narrative",        "path": "atoms/02.DOMAINS/FILM/skills/film-narrative",        "domain": "FILM" },
+    { "name": "film-visual-language",  "path": "atoms/02.DOMAINS/FILM/skills/film-visual-language",  "domain": "FILM" },
+    { "name": "film-art-direction",    "path": "atoms/02.DOMAINS/FILM/skills/film-art-direction",    "domain": "FILM" },
+    { "name": "film-performance",      "path": "atoms/02.DOMAINS/FILM/skills/film-performance",      "domain": "FILM" },
+    { "name": "film-directing",        "path": "atoms/02.DOMAINS/FILM/skills/film-directing",        "domain": "FILM" },
+    { "name": "nano-banana-prompts",   "path": "atoms/02.DOMAINS/FILM/skills/nano-banana-prompts",   "domain": "FILM" },
+    { "name": "nano-banana-pro",       "path": "atoms/02.DOMAINS/FILM/skills/nano-banana-pro",       "domain": "FILM" },
+    { "name": "seedance-prompts",      "path": "atoms/02.DOMAINS/FILM/skills/seedance-prompts",      "domain": "FILM" },
+    { "name": "brainstorming",         "path": "atoms/01.CORE/skills/brainstorming",                 "domain": "CORE" },
+    { "name": "creative-workflow",     "path": "atoms/01.CORE/skills/creative-workflow",             "domain": "CORE" },
+    { "name": "writing-plans",         "path": "atoms/01.CORE/skills/writing-plans",                 "domain": "CORE" },
+    { "name": "executing-plans",       "path": "atoms/01.CORE/skills/executing-plans",               "domain": "CORE" },
+    { "name": "bugfix",                "path": "atoms/01.CORE/skills/bugfix",                        "domain": "CORE" },
+    { "name": "wiki-generator",        "path": "atoms/01.CORE/skills/wiki-generator",                "domain": "CORE" },
+    { "name": "git-workspace-init",    "path": "atoms/01.CORE/skills/git-workspace-init",            "domain": "CORE" },
+    { "name": "agent-creator",         "path": "atoms/01.CORE/skills/agent-creator",                 "domain": "CORE" },
+    { "name": "skill-creator",         "path": "atoms/01.CORE/skills/skill-creator",                 "domain": "CORE" },
+    { "name": "knowledge-graph",       "path": "atoms/02.DOMAINS/KNOWLEDGE/skills/knowledge-graph",   "domain": "KNOWLEDGE" },
+    { "name": "atomic-notes",          "path": "atoms/02.DOMAINS/KNOWLEDGE/skills/atomic-notes",      "domain": "KNOWLEDGE" },
+    { "name": "knowledge-viz",         "path": "atoms/02.DOMAINS/KNOWLEDGE/skills/knowledge-viz",     "domain": "KNOWLEDGE" },
+    { "name": "smart-tags",            "path": "atoms/02.DOMAINS/KNOWLEDGE/skills/smart-tags",        "domain": "KNOWLEDGE" },
+    { "name": "openspec",               "path": "atoms/01.CORE/skills/openspec",                      "domain": "CORE" }
+  ]
+}

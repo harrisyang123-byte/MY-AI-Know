@@ -1,0 +1,52 @@
+{
+  "$schema": "https://openspec.fission.ai/schema/openspec.config.schema.json",
+  "version": "1.0.0",
+  "project": {
+    "name": "AI-atom",
+    "type": "multi-agent-system",
+    "description": "AI 原子项目 - 多 Agent 协作与创意工作流系统"
+  },
+  "specs": {
+    "defaultLocation": "openspec/specs/",
+    "includePatterns": ["**/*.md"],
+    "excludePatterns": ["**/node_modules/**", "**/.git/**"]
+  },
+  "changes": {
+    "location": "openspec/changes/",
+    "archiveLocation": "openspec/changes/archive/",
+    "autoArchiveOnApply": false,
+    "requireReview": false
+  },
+  "ai": {
+    "model": "claude-3-5-sonnet-20241022",
+    "temperature": 0.1,
+    "maxTokens": 4000,
+    "systemPrompt": "You are a senior software engineer implementing changes according to the provided specification. Follow the spec exactly and do not deviate.",
+    "validationPrompt": "Review the implemented changes against the spec and provide feedback."
+  },
+  "validation": {
+    "runTests": true,
+    "checkTypes": true,
+    "lintCode": true,
+    "preCommitHooks": true
+  },
+  "claudeCode": {
+    "commandPrefix": "openspec",
+    "enabled": true,
+    "autoLoadSpecs": true
+  },
+  "integrations": {
+    "git": {
+      "autoCommit": false,
+      "commitMessageTemplate": "feat: implement {{changeName}} according to spec"
+    },
+    "vscode": {
+      "enabled": false,
+      "openSpecOnProposal": true
+    }
+  },
+  "extensions": {
+    "customCommands": [],
+    "plugins": []
+  }
+}
