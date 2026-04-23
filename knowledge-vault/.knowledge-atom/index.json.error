@@ -1,0 +1,121 @@
+{
+  "version": 4,
+  "updatedAt": "2026-04-20T19:30:00.000Z",
+  "concepts": {
+    "人性弱点": {
+      "name": "人性弱点",
+      "definition": "人类在进化过程中形成的、普遍存在的心理倾向和行为惯性，源于生存需求、情感需求和认知局限，本质是趋利避害的本能延伸。",
+      "centrality": 0.85,
+      "abstractness": 0.92,
+      "status": "confirmed",
+      "aliases": [],
+      "sources": ["概念/人性弱点.md"],
+      "notePath": "概念/人性弱点.md",
+      "extractedAt": "2026-04-20T19:00:00.000Z"
+    },
+    "利己": {
+      "name": "利己",
+      "definition": "优先考虑自身利益的本能，非贬义，是生存本能，所有弱点都围绕满足自身需求展开。",
+      "centrality": 0.72,
+      "abstractness": 0.88,
+      "status": "confirmed",
+      "aliases": ["自我中心"],
+      "sources": ["概念/利己.md"],
+      "notePath": "概念/利己.md",
+      "extractedAt": "2026-04-20T19:00:10.000Z"
+    },
+    "贪婪": {
+      "name": "贪婪",
+      "definition": "渴望获得更多（金钱、名利、欲望），不懂得知足，源于原始生存需求。",
+      "centrality": 0.65,
+      "abstractness": 0.45,
+      "status": "confirmed",
+      "aliases": ["贪心", "贪欲"],
+      "sources": ["概念/贪婪.md"],
+      "notePath": "概念/贪婪.md",
+      "extractedAt": "2026-04-20T19:00:20.000Z"
+    },
+    "恐惧": {
+      "name": "恐惧",
+      "definition": "害怕失去（现有利益、面对未知、遭遇挫折），容易陷入焦虑和退缩，源于规避生存风险。",
+      "centrality": 0.68,
+      "abstractness": 0.48,
+      "status": "confirmed",
+      "aliases": ["害怕", "担忧"],
+      "sources": ["概念/恐惧.md"],
+      "notePath": "概念/恐惧.md",
+      "extractedAt": "2026-04-20T19:00:30.000Z"
+    },
+    "自私": {
+      "name": "自私",
+      "definition": "优先考虑自身利益，忽视他人感受和集体利益，过度自私会破坏人际关系。",
+      "centrality": 0.62,
+      "abstractness": 0.42,
+      "status": "confirmed",
+      "aliases": ["自我中心"],
+      "sources": ["概念/自私.md"],
+      "notePath": "概念/自私.md",
+      "extractedAt": "2026-04-20T19:00:40.000Z"
+    },
+    "虚荣": {
+      "name": "虚荣",
+      "definition": "渴望被他人关注、认可和羡慕，过度追求表面的光鲜，源于被尊重的心理需求。",
+      "centrality": 0.58,
+      "abstractness": 0.38,
+      "status": "confirmed",
+      "aliases": ["爱面子", "炫耀"],
+      "sources": ["概念/虚荣.md"],
+      "notePath": "概念/虚荣.md",
+      "extractedAt": "2026-04-20T19:00:50.000Z"
+    },
+    "攀比": {
+      "name": "攀比",
+      "definition": "习惯性和他人比较，看到别人更好就产生嫉妒、焦虑，源于自我认同缺失。",
+      "centrality": 0.56,
+      "abstractness": 0.35,
+      "status": "confirmed",
+      "aliases": ["比较", "竞争"],
+      "sources": ["概念/攀比.md"],
+      "notePath": "概念/攀比.md",
+      "extractedAt": "2026-04-20T19:01:00.000Z"
+    },
+    "懒惰": {
+      "name": "懒惰",
+      "definition": "贪图安逸，不愿付出努力，总想用最简单、最省力的方式完成事情，源于趋易避难的本能。",
+      "centrality": 0.60,
+      "abstractness": 0.40,
+      "status": "confirmed",
+      "aliases": ["懒散", "怠惰"],
+      "sources": ["概念/懒惰.md"],
+      "notePath": "概念/懒惰.md",
+      "extractedAt": "2026-04-20T19:01:10.000Z"
+    },
+    "拖延": {
+      "name": "拖延",
+      "definition": "遇到困难或枯燥的任务时习惯性拖延，能拖就拖，直到最后一刻才仓促应对，是对失败恐惧的逃避。",
+      "centrality": 0.55,
+      "abstractness": 0.32,
+      "status": "confirmed",
+      "aliases": ["推迟", "延后"],
+      "sources": ["概念/拖延.md"],
+      "notePath": "概念/拖延.md",
+      "extractedAt": "2026-04-20T19:01:20.000Z"
+    }
+  },
+  "relations": [],
+  "notes": {},
+  "protons": {
+    "贪婪": { "id": "贪婪", "conceptName": "贪婪", "content": "...", "x": 100, "y": 100 },
+    "恐惧": { "id": "恐惧", "conceptName": "恐惧", "content": "...", "x": 100, "y": 300 },
+    "懒惰": { "id": "懒惰", "conceptName": "懒惰", "content": "...", "x": 50, "y": 150 },
+    "拖延": { "id": "拖延", "conceptName": "拖延", "content": "...", "x": 50, "y": 250 },
+    "虚荣": { "id": "虚荣", "conceptName": "虚荣", "content": "...", "x": 350, "y": 100 },
+    "攀比": { "id": "攀比", "conceptName": "攀比", "content": "...", "x": 350, "y": 300 },
+    "自私": { "id": "自私", "conceptName": "自私", "content": "...", "x": 300, "y": 250 },
+    "利己": { "id": "利己", "conceptName": "利己", "content": "...", "x": 300, "y": 150 },
+    "人性弱点": { "id": "人性弱点", "conceptName": "人性弱点", "content": "...", "x": 200, "y": 200 }
+  },
+  "nebulas": [],
+  "crystals": {},
+  "knowledgeLayers": []
+}

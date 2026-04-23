@@ -1,0 +1,10 @@
+changeId: comprehensive-prd-alignment
+name: 全面对齐 PRD
+description: 全面实现 PRD 中要求的功能，包括知识提取确认界面、概念审核、知识检索、图谱过滤器完善等
+status: in-progress
+createdAt: '2026-04-18'
+categories:
+  - feature
+  - ui-ux
+  - bug-fix
+priority: high

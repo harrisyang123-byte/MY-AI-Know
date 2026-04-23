@@ -1,0 +1,22 @@
+
+# Dependencies
+node_modules/
+
+# Build output
+main.js
+*.js.map
+
+# Obsidian Vault
+.obsidian/
+*.md
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+

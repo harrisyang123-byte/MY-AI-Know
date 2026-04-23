@@ -1,0 +1,11 @@
+{
+	"id": "ai-atom-knowledge",
+	"name": "AI Atom Knowledge",
+	"version": "0.7.0",
+	"minAppVersion": "1.0.0",
+	"description": "知识构建插件：知识涌现社区发现、自动提取概念、管理原子笔记、可视化知识图谱、智能标签与摘要",
+	"author": "AI-Atom",
+	"authorUrl": "",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}

@@ -1,0 +1,29 @@
+{
+  "env": {},
+  "permissions": {
+    "allow": [
+      "Bash(openspec instructions *)",
+      "Bash(cd /d D:\\\\AI-atom\\\\atoms\\\\02.DOMAINS\\\\KNOWLEDGE)",
+      "Bash(openspec status *)",
+      "Bash(openspec ready *)",
+      "Bash(openspec --help)",
+      "Bash(openspec change *)",
+      "Bash(openspec validate *)",
+      "Bash(openspec list *)",
+      "Bash(npx openspec *)",
+      "Bash(python *)",
+      "Bash(npm run *)",
+      "Bash(cp D:/AI-atom/atoms/02.DOMAINS/KNOWLEDGE/plugin/main.js D:/AI-atom/knowledge-vault/.obsidian/plugins/ai-atom-knowledge/)",
+      "Bash(cp D:/AI-atom/atoms/02.DOMAINS/KNOWLEDGE/plugin/manifest.json D:/AI-atom/knowledge-vault/.obsidian/plugins/ai-atom-knowledge/)",
+      "Bash(cp D:/AI-atom/atoms/02.DOMAINS/KNOWLEDGE/plugin/styles.css D:/AI-atom/knowledge-vault/.obsidian/plugins/ai-atom-knowledge/)",
+      "Bash(git *)",
+      "Bash(sed *)",
+      "Bash(awk 'NR==199{print NR \":\", $0}' main.ts)",
+      "Bash(awk 'NR>=310 && NR<=320{print NR \": \" $0}' main.ts)",
+      "Bash(findstr :4000)",
+      "Bash(curl *)",
+      "Bash(litellm --config litellm-config.yaml --port 4000)",
+      "Bash(litellm --config litellm-config.yaml --port 4000 --debug)"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+change_id: align-prd-and-code
+name: 对齐 PRD 和代码
+description: 修复社区颜色顺序、添加图谱显示模式切换按钮、优化图例显示
+status: completed
+created_at: "2026-04-19"
+author: "Knowledge Architect"
+tags:
+  - fix
+  - ui
+  - prd-alignment

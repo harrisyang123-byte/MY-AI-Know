@@ -1,0 +1,135 @@
+{
+  "timestamp": "2026-04-20T13:44:04.451Z",
+  "protons": [
+    {
+      "id": "p1",
+      "conceptName": "相对论",
+      "content": "爱因斯坦的时空弯曲理论"
+    },
+    {
+      "id": "p2",
+      "conceptName": "牛顿力学",
+      "content": "经典力学体系"
+    },
+    {
+      "id": "p3",
+      "conceptName": "量子力学",
+      "content": "微观粒子行为理论"
+    },
+    {
+      "id": "p4",
+      "conceptName": "博弈论",
+      "content": "策略互动数学模型"
+    },
+    {
+      "id": "p5",
+      "conceptName": "进化论",
+      "content": "生物演化规律"
+    },
+    {
+      "id": "p6",
+      "conceptName": "经济学",
+      "content": "资源分配研究"
+    },
+    {
+      "id": "p7",
+      "conceptName": "心理学",
+      "content": "心理过程研究"
+    },
+    {
+      "id": "p8",
+      "conceptName": "人工智能",
+      "content": "机器学习理论"
+    }
+  ],
+  "relations": [
+    {
+      "from": "p1",
+      "to": "p2",
+      "strength": 0.9,
+      "direction": -0.8,
+      "context": "范式冲突"
+    },
+    {
+      "from": "p1",
+      "to": "p3",
+      "strength": 0.7,
+      "direction": 0.3,
+      "context": "同一领域不同分支"
+    },
+    {
+      "from": "p4",
+      "to": "p5",
+      "strength": 0.85,
+      "direction": 0.9,
+      "context": "博弈论在进化中应用"
+    },
+    {
+      "from": "p4",
+      "to": "p6",
+      "strength": 0.8,
+      "direction": 0.7,
+      "context": "经济学中的博弈"
+    },
+    {
+      "from": "p7",
+      "to": "p8",
+      "strength": 0.6,
+      "direction": 0.5,
+      "context": "AI与心理学交叉"
+    },
+    {
+      "from": "p5",
+      "to": "p6",
+      "strength": 0.5,
+      "direction": 0.4,
+      "context": "进化经济学"
+    }
+  ],
+  "nebulas": [
+    {
+      "id": "nebula_p3",
+      "protons": [
+        "p1",
+        "p3"
+      ],
+      "cohesionStrength": 0.21,
+      "stability": 0.21
+    },
+    {
+      "id": "nebula_p2",
+      "protons": [
+        "p2"
+      ],
+      "cohesionStrength": 1,
+      "stability": 1
+    },
+    {
+      "id": "nebula_p5",
+      "protons": [
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "cohesionStrength": 0.5083333333333333,
+      "stability": 0.5083333333333333
+    },
+    {
+      "id": "nebula_p8",
+      "protons": [
+        "p7",
+        "p8"
+      ],
+      "cohesionStrength": 0.3,
+      "stability": 0.3
+    }
+  ],
+  "crystals": [],
+  "summary": {
+    "totalProtons": 8,
+    "totalRelations": 6,
+    "totalNebulas": 4,
+    "totalCrystals": 0,
+    "testPassed": true
+  }
+}

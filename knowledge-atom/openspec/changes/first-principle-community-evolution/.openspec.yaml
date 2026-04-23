@@ -1,0 +1,16 @@
+name: "first-principle-community-evolution"
+title: "第一性原则知识社区演化功能"
+status: "proposed"
+priority: "high"
+created: "2026-04-20"
+updated: "2026-04-20"
+owner: "AI"
+modules:
+  - "知识图谱模块"
+  - "AI技能模块"
+  - "知识索引模块"
+entities:
+  - "Community"
+  - "Concept"
+  - "Relation"
+  - "UserIntervention"

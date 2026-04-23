@@ -1,0 +1,1088 @@
+{
+  "version": 4,
+  "updatedAt": "2026-04-22T23:35:36.789Z",
+  "concepts": {
+    "人性弱点": {
+      "name": "人性弱点",
+      "definition": "人类在进化过程中形成的普遍心理倾向和行为惯性，源于生存需求、情感需求和认知局限，本质是趋利避害的本能延伸，可引导和修正。",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [],
+      "sources": [
+        "人性弱点全部知识点笔记.md"
+      ],
+      "notePath": "概念/人性弱点.md",
+      "extractedAt": "2026-04-21T12:07:51.309Z",
+      "firstPrinciples": [
+        "趋利避害本能",
+        "利己本能",
+        "心理倾向普遍性"
+      ]
+    },
+    "贪婪": {
+      "name": "贪婪",
+      "definition": "渴望更多资源或欲望，不懂得知足，源于原始生存需求，在现代社会被放大。",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [],
+      "sources": [
+        "人性弱点全部知识点笔记.md"
+      ],
+      "notePath": "概念/贪婪.md",
+      "extractedAt": "2026-04-21T12:07:51.309Z",
+      "firstPrinciples": [
+        "趋利避害",
+        "资源储备"
+      ]
+    },
+    "恐惧": {
+      "name": "恐惧",
+      "definition": "害怕失去现有利益或面对未知风险，源于规避生存风险的本能，容易导致焦虑和退缩。",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [],
+      "sources": [
+        "人性弱点全部知识点笔记.md"
+      ],
+      "notePath": "概念/恐惧.md",
+      "extractedAt": "2026-04-21T12:07:51.309Z",
+      "firstPrinciples": [
+        "趋利避害",
+        "风险规避"
+      ]
+    },
+    "自私": {
+      "name": "自私",
+      "definition": "优先考虑自身利益，忽视他人感受和集体利益，是本能而非恶，但过度会损害长远利益。",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [],
+      "sources": [
+        "人性弱点全部知识点笔记.md"
+      ],
+      "notePath": "概念/自私.md",
+      "extractedAt": "2026-04-21T12:07:51.309Z",
+      "firstPrinciples": [
+        "利己本能",
+        "趋利避害"
+      ]
+    },
+    "虚荣": {
+      "name": "虚荣",
+      "definition": "渴望被他人关注和认可，过度追求表面光鲜，源于被尊重的心理需求和自我认同缺失。",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [],
+      "sources": [
+        "人性弱点全部知识点笔记.md"
+      ],
+      "notePath": "概念/虚荣.md",
+      "extractedAt": "2026-04-21T12:07:51.309Z",
+      "firstPrinciples": [
+        "心理需求",
+        "自我认同"
+      ]
+    },
+    "攀比": {
+      "name": "攀比",
+      "definition": "习惯性和他人比较，看到别人更好时产生嫉妒或焦虑，源于认可需求和自我认同不足。",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [],
+      "sources": [
+        "人性弱点全部知识点笔记.md"
+      ],
+      "notePath": "概念/攀比.md",
+      "extractedAt": "2026-04-21T12:07:51.309Z",
+      "firstPrinciples": [
+        "心理需求",
+        "社会比较"
+      ]
+    },
+    "懒惰": {
+      "name": "懒惰",
+      "definition": "贪图安逸，不愿付出努力，源于趋易避难的本能，大脑优先选择轻松愉悦的事情。",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [],
+      "sources": [
+        "人性弱点全部知识点笔记.md"
+      ],
+      "notePath": "概念/懒惰.md",
+      "extractedAt": "2026-04-21T12:07:51.309Z",
+      "firstPrinciples": [
+        "趋易避难",
+        "能量守恒"
+      ]
+    },
+    "拖延": {
+      "name": "拖延",
+      "definition": "遇到困难或枯燥任务时习惯性推迟，是对失败恐惧的逃避，直到最后一刻才应对。",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [],
+      "sources": [
+        "人性弱点全部知识点笔记.md"
+      ],
+      "notePath": "概念/拖延.md",
+      "extractedAt": "2026-04-21T12:07:51.309Z",
+      "firstPrinciples": [
+        "趋易避难",
+        "风险规避"
+      ]
+    },
+    "第一性原则": {
+      "name": "第一性原则",
+      "definition": "从基本原理出发推导结论的思维方法，避免依赖类比或假设",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [
+        "第一性原理"
+      ],
+      "sources": [
+        "人性弱点.md"
+      ],
+      "notePath": "概念/第一性原则.md",
+      "extractedAt": "2026-04-22T00:06:46.466Z",
+      "firstPrinciples": [
+        "逻辑推导",
+        "因果链分析"
+      ]
+    },
+    "类比思维": {
+      "name": "类比思维",
+      "definition": "通过已知事物或概念来理解新事物的思维方法，基于相似性进行推理",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [],
+      "sources": [
+        "人性弱点.md"
+      ],
+      "notePath": "概念/类比思维.md",
+      "extractedAt": "2026-04-22T00:06:46.466Z",
+      "firstPrinciples": [
+        "模式识别",
+        "相似性映射"
+      ]
+    },
+    "效率": {
+      "name": "效率",
+      "definition": "以最小资源投入实现最大产出的优化过程",
+      "centrality": 0.5,
+      "abstractness": 0,
+      "status": "draft",
+      "aliases": [],
+      "sources": [
+        "人性弱点.md"
+      ],
+      "notePath": "概念/效率.md",
+      "extractedAt": "2026-04-22T00:06:46.466Z",
+      "firstPrinciples": [
+        "资源优化",
+        "成本效益分析"
+      ]
+    }
+  },
+  "relations": [
+    {
+      "from": "贪婪",
+      "to": "恐惧",
+      "gravity": {
+        "strength": 0.7,
+        "direction": -1,
+        "dimensions": [
+          "行为动机",
+          "风险感知"
+        ],
+        "context": "贪婪驱动追求更多，而恐惧驱动规避风险，两者在行为上常对立。",
+        "computedAt": "2026-04-21T12:07:51.359Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776773271359_cwrg9",
+      "createdAt": "2026-04-21T12:07:51.359Z"
+    },
+    {
+      "from": "虚荣",
+      "to": "攀比",
+      "gravity": {
+        "strength": 0.8,
+        "direction": 1,
+        "dimensions": [
+          "心理需求",
+          "社会行为"
+        ],
+        "context": "虚荣和攀比都源于被认可的需求，攀比是虚荣的外在表现。",
+        "computedAt": "2026-04-21T12:07:51.359Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776773271359_5z383",
+      "createdAt": "2026-04-21T12:07:51.359Z"
+    },
+    {
+      "from": "懒惰",
+      "to": "拖延",
+      "gravity": {
+        "strength": 0.9,
+        "direction": 1,
+        "dimensions": [
+          "行为惯性",
+          "认知局限"
+        ],
+        "context": "懒惰是贪图安逸的本能，拖延是懒惰在面对任务时的具体行为表现。",
+        "computedAt": "2026-04-21T12:07:51.359Z",
+        "confidence": 0.9
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776773271359_30gos",
+      "createdAt": "2026-04-21T12:07:51.359Z"
+    },
+    {
+      "from": "贪婪",
+      "to": "自私",
+      "gravity": {
+        "strength": 0.6,
+        "direction": 1,
+        "dimensions": [
+          "动机重叠",
+          "利益驱动"
+        ],
+        "context": "贪婪和自私都涉及过度关注自身利益，贪婪可能强化自私行为。",
+        "computedAt": "2026-04-21T12:07:51.359Z",
+        "confidence": 0.7
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776773271359_zl2w5",
+      "createdAt": "2026-04-21T12:07:51.359Z"
+    },
+    {
+      "from": "恐惧",
+      "to": "拖延",
+      "gravity": {
+        "strength": 0.8,
+        "direction": 1,
+        "dimensions": [
+          "行为动机",
+          "风险规避"
+        ],
+        "context": "恐惧是拖延的底层原因之一，害怕失败导致逃避任务。",
+        "computedAt": "2026-04-21T12:07:51.359Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776773271359_xuzhn",
+      "createdAt": "2026-04-21T12:07:51.359Z"
+    },
+    {
+      "from": "虚荣",
+      "to": "贪婪",
+      "gravity": {
+        "strength": 0.5,
+        "direction": 1,
+        "dimensions": [
+          "欲望驱动",
+          "心理需求"
+        ],
+        "context": "虚荣可能驱动贪婪行为，如追求更多物质以炫耀。",
+        "computedAt": "2026-04-21T12:07:51.359Z",
+        "confidence": 0.6
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776773271359_mgfvu",
+      "createdAt": "2026-04-21T12:07:51.359Z"
+    },
+    {
+      "from": "贪婪",
+      "to": "恐惧",
+      "gravity": {
+        "strength": 0.7,
+        "direction": 1,
+        "dimensions": [
+          "心理",
+          "进化"
+        ],
+        "context": "贪婪和恐惧都源于原始生存需求，是趋利避害本能的两个方面，共同影响理性判断。",
+        "computedAt": "2026-04-21T23:57:56.772Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776815876772_j01em",
+      "createdAt": "2026-04-21T23:57:56.772Z"
+    },
+    {
+      "from": "虚荣",
+      "to": "攀比",
+      "gravity": {
+        "strength": 0.8,
+        "direction": 1,
+        "dimensions": [
+          "心理",
+          "社会"
+        ],
+        "context": "虚荣和攀比都源于被认可的心理需求，攀比是虚荣的外在比较行为，共同反映自我认同缺失。",
+        "computedAt": "2026-04-21T23:57:56.772Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776815876772_30bjw",
+      "createdAt": "2026-04-21T23:57:56.772Z"
+    },
+    {
+      "from": "懒惰",
+      "to": "拖延",
+      "gravity": {
+        "strength": 0.9,
+        "direction": 1,
+        "dimensions": [
+          "行为",
+          "心理"
+        ],
+        "context": "拖延是懒惰的延伸表现，两者都源于逃避痛苦和趋易避难的本能，拖延更具体针对任务延迟。",
+        "computedAt": "2026-04-21T23:57:56.772Z",
+        "confidence": 0.9
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776815876772_5ig5k",
+      "createdAt": "2026-04-21T23:57:56.772Z"
+    },
+    {
+      "from": "人性弱点",
+      "to": "贪婪",
+      "gravity": {
+        "strength": 0.8,
+        "direction": 1,
+        "dimensions": [
+          "分类",
+          "实例"
+        ],
+        "context": "贪婪是人性弱点的具体表现之一，体现趋利避害本能在现代社会的放大。",
+        "computedAt": "2026-04-21T23:57:56.772Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776815876772_cy900",
+      "createdAt": "2026-04-21T23:57:56.772Z"
+    },
+    {
+      "from": "人性弱点",
+      "to": "恐惧",
+      "gravity": {
+        "strength": 0.8,
+        "direction": 1,
+        "dimensions": [
+          "分类",
+          "实例"
+        ],
+        "context": "恐惧是人性弱点的具体表现之一，源于规避风险的本能，影响行为决策。",
+        "computedAt": "2026-04-21T23:57:56.772Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776815876772_f15c8",
+      "createdAt": "2026-04-21T23:57:56.772Z"
+    },
+    {
+      "from": "人性弱点",
+      "to": "自私",
+      "gravity": {
+        "strength": 0.8,
+        "direction": 1,
+        "dimensions": [
+          "分类",
+          "实例"
+        ],
+        "context": "自私是人性弱点的具体表现之一，是利己本能的直接延伸，可能损害人际关系。",
+        "computedAt": "2026-04-21T23:57:56.772Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776815876772_t2aos",
+      "createdAt": "2026-04-21T23:57:56.772Z"
+    },
+    {
+      "from": "人性弱点",
+      "to": "虚荣",
+      "gravity": {
+        "strength": 0.7,
+        "direction": 1,
+        "dimensions": [
+          "分类",
+          "实例"
+        ],
+        "context": "虚荣是人性弱点的具体表现之一，源于被尊重的心理需求，导致过度追求表面认可。",
+        "computedAt": "2026-04-21T23:57:56.772Z",
+        "confidence": 0.7
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776815876772_mp9fm",
+      "createdAt": "2026-04-21T23:57:56.772Z"
+    },
+    {
+      "from": "人性弱点",
+      "to": "攀比",
+      "gravity": {
+        "strength": 0.7,
+        "direction": 1,
+        "dimensions": [
+          "分类",
+          "实例"
+        ],
+        "context": "攀比是人性弱点的具体表现之一，与虚荣相关，反映社会比较和自我评价机制。",
+        "computedAt": "2026-04-21T23:57:56.772Z",
+        "confidence": 0.7
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776815876772_g5r56",
+      "createdAt": "2026-04-21T23:57:56.772Z"
+    },
+    {
+      "from": "人性弱点",
+      "to": "懒惰",
+      "gravity": {
+        "strength": 0.8,
+        "direction": 1,
+        "dimensions": [
+          "分类",
+          "实例"
+        ],
+        "context": "懒惰是人性弱点的具体表现之一，源于趋易避难的本能，影响行动力和效率。",
+        "computedAt": "2026-04-21T23:57:56.772Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776815876772_9m0oi",
+      "createdAt": "2026-04-21T23:57:56.772Z"
+    },
+    {
+      "from": "人性弱点",
+      "to": "拖延",
+      "gravity": {
+        "strength": 0.8,
+        "direction": 1,
+        "dimensions": [
+          "分类",
+          "实例"
+        ],
+        "context": "拖延是人性弱点的具体表现之一，是懒惰的延伸，源于对失败恐惧的逃避。",
+        "computedAt": "2026-04-21T23:57:56.772Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点全部知识点笔记.md",
+      "id": "r_1776815876772_wg8f0",
+      "createdAt": "2026-04-21T23:57:56.772Z"
+    },
+    {
+      "from": "第一性原则",
+      "to": "类比思维",
+      "gravity": {
+        "strength": 0.6,
+        "direction": -0.5,
+        "dimensions": [
+          "逻辑推导"
+        ],
+        "context": "第一性原则强调避免类比，导致部分排斥",
+        "computedAt": "2026-04-22T00:06:46.485Z",
+        "confidence": 0.7
+      },
+      "source": "人性弱点.md",
+      "id": "r_1776816406485_9au4f",
+      "createdAt": "2026-04-22T00:06:46.485Z"
+    },
+    {
+      "from": "第一性原则",
+      "to": "效率",
+      "gravity": {
+        "strength": 0.8,
+        "direction": 1,
+        "dimensions": [
+          "逻辑推导"
+        ],
+        "context": "第一性原则通过简化问题提高效率",
+        "computedAt": "2026-04-22T00:06:46.485Z",
+        "confidence": 0.8
+      },
+      "source": "人性弱点.md",
+      "id": "r_1776816406485_4yn5h",
+      "createdAt": "2026-04-22T00:06:46.485Z"
+    },
+    {
+      "from": "类比思维",
+      "to": "效率",
+      "gravity": {
+        "strength": 0.5,
+        "direction": 0.3,
+        "dimensions": [
+          "模式识别"
+        ],
+        "context": "类比思维可能加速理解但有时降低精确性",
+        "computedAt": "2026-04-22T00:06:46.485Z",
+        "confidence": 0.6
+      },
+      "source": "人性弱点.md",
+      "id": "r_1776816406485_2i9h8",
+      "createdAt": "2026-04-22T00:06:46.485Z"
+    }
+  ],
+  "notes": {
+    "人性弱点全部知识点笔记.md": {
+      "filePath": "人性弱点全部知识点笔记.md",
+      "title": "人性弱点全部知识点笔记",
+      "summary": "人性弱点是人类进化中形成的普遍心理倾向，源于利己本能和趋利避害，包括贪婪、恐惧、自私、虚荣、攀比、懒惰和拖延等具体表现，可引导和修正。",
+      "tags": [
+        "心理学",
+        "人性",
+        "行为科学",
+        "进化心理学"
+      ],
+      "concepts": [
+        "人性弱点",
+        "利己",
+        "贪婪",
+        "恐惧",
+        "自私",
+        "虚荣",
+        "攀比",
+        "懒惰",
+        "拖延"
+      ],
+      "implicitLinksAdded": [],
+      "indexedAt": "2026-04-21T23:58:06.716Z"
+    },
+    "人性弱点.md": {
+      "filePath": "人性弱点.md",
+      "title": "人性弱点",
+      "summary": "笔记讨论了第一性原则和类比思维作为两种核心思维方法，如何影响创新和效率，强调第一性原则在推动根本性创新和效率提升中的作用。",
+      "tags": [
+        "思维方法",
+        "创新理论",
+        "效率优化"
+      ],
+      "concepts": [
+        "第一性原则",
+        "类比思维",
+        "创新",
+        "效率"
+      ],
+      "implicitLinksAdded": [],
+      "indexedAt": "2026-04-22T00:06:46.466Z"
+    }
+  },
+  "communities": [
+    {
+      "id": "nebula_p_人性弱点",
+      "name": "心理学",
+      "phase": "crystal",
+      "concepts": [
+        "人性弱点"
+      ],
+      "protons": [
+        {
+          "id": "p_人性弱点",
+          "conceptName": "人性弱点",
+          "content": "人类在进化过程中形成的普遍心理倾向和行为惯性，源于生存需求、情感需求和认知局限，本质是趋利避害的本能延伸，可引导和修正。",
+          "firstPrinciples": [
+            "趋利避害本能",
+            "利己本能",
+            "心理倾向普遍性"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点全部知识点笔记.md",
+          "extractedAt": "2026-04-21T12:07:51.309Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#4a9eff"
+    },
+    {
+      "id": "nebula_p_利己",
+      "name": "心理学",
+      "phase": "crystal",
+      "concepts": [],
+      "protons": [],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#f5a623"
+    },
+    {
+      "id": "nebula_p_贪婪",
+      "name": "心理学",
+      "phase": "crystal",
+      "concepts": [
+        "贪婪"
+      ],
+      "protons": [
+        {
+          "id": "p_贪婪",
+          "conceptName": "贪婪",
+          "content": "渴望更多资源或欲望，不懂得知足，源于原始生存需求，在现代社会被放大。",
+          "firstPrinciples": [
+            "趋利避害",
+            "资源储备"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点全部知识点笔记.md",
+          "extractedAt": "2026-04-21T12:07:51.309Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#7ed321"
+    },
+    {
+      "id": "nebula_p_恐惧",
+      "name": "心理学",
+      "phase": "crystal",
+      "concepts": [
+        "恐惧"
+      ],
+      "protons": [
+        {
+          "id": "p_恐惧",
+          "conceptName": "恐惧",
+          "content": "害怕失去现有利益或面对未知风险，源于规避生存风险的本能，容易导致焦虑和退缩。",
+          "firstPrinciples": [
+            "趋利避害",
+            "风险规避"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点全部知识点笔记.md",
+          "extractedAt": "2026-04-21T12:07:51.309Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#bd10e0"
+    },
+    {
+      "id": "nebula_p_自私",
+      "name": "心理学",
+      "phase": "crystal",
+      "concepts": [
+        "自私"
+      ],
+      "protons": [
+        {
+          "id": "p_自私",
+          "conceptName": "自私",
+          "content": "优先考虑自身利益，忽视他人感受和集体利益，是本能而非恶，但过度会损害长远利益。",
+          "firstPrinciples": [
+            "利己本能",
+            "趋利避害"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点全部知识点笔记.md",
+          "extractedAt": "2026-04-21T12:07:51.309Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#ff5a5a"
+    },
+    {
+      "id": "nebula_p_虚荣",
+      "name": "心理学",
+      "phase": "crystal",
+      "concepts": [
+        "虚荣"
+      ],
+      "protons": [
+        {
+          "id": "p_虚荣",
+          "conceptName": "虚荣",
+          "content": "渴望被他人关注和认可，过度追求表面光鲜，源于被尊重的心理需求和自我认同缺失。",
+          "firstPrinciples": [
+            "心理需求",
+            "自我认同"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点全部知识点笔记.md",
+          "extractedAt": "2026-04-21T12:07:51.309Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#50e3c2"
+    },
+    {
+      "id": "nebula_p_攀比",
+      "name": "心理学",
+      "phase": "crystal",
+      "concepts": [
+        "攀比"
+      ],
+      "protons": [
+        {
+          "id": "p_攀比",
+          "conceptName": "攀比",
+          "content": "习惯性和他人比较，看到别人更好时产生嫉妒或焦虑，源于认可需求和自我认同不足。",
+          "firstPrinciples": [
+            "心理需求",
+            "社会比较"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点全部知识点笔记.md",
+          "extractedAt": "2026-04-21T12:07:51.309Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#f8e71c"
+    },
+    {
+      "id": "nebula_p_懒惰",
+      "name": "心理学",
+      "phase": "crystal",
+      "concepts": [
+        "懒惰"
+      ],
+      "protons": [
+        {
+          "id": "p_懒惰",
+          "conceptName": "懒惰",
+          "content": "贪图安逸，不愿付出努力，源于趋易避难的本能，大脑优先选择轻松愉悦的事情。",
+          "firstPrinciples": [
+            "趋易避难",
+            "能量守恒"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点全部知识点笔记.md",
+          "extractedAt": "2026-04-21T12:07:51.309Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#9b9b9b"
+    },
+    {
+      "id": "nebula_p_拖延",
+      "name": "心理学",
+      "phase": "crystal",
+      "concepts": [
+        "拖延"
+      ],
+      "protons": [
+        {
+          "id": "p_拖延",
+          "conceptName": "拖延",
+          "content": "遇到困难或枯燥任务时习惯性推迟，是对失败恐惧的逃避，直到最后一刻才应对。",
+          "firstPrinciples": [
+            "趋易避难",
+            "风险规避"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点全部知识点笔记.md",
+          "extractedAt": "2026-04-21T12:07:51.309Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#4a9eff"
+    },
+    {
+      "id": "nebula_p_第一性原则",
+      "name": "思维方法",
+      "phase": "crystal",
+      "concepts": [
+        "第一性原则"
+      ],
+      "protons": [
+        {
+          "id": "p_第一性原则",
+          "conceptName": "第一性原则",
+          "content": "从基本原理出发推导结论的思维方法，避免依赖类比或假设",
+          "firstPrinciples": [
+            "逻辑推导",
+            "因果链分析"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点.md",
+          "extractedAt": "2026-04-22T00:06:46.466Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#f5a623"
+    },
+    {
+      "id": "nebula_p_类比思维",
+      "name": "思维方法",
+      "phase": "crystal",
+      "concepts": [
+        "类比思维"
+      ],
+      "protons": [
+        {
+          "id": "p_类比思维",
+          "conceptName": "类比思维",
+          "content": "通过已知事物或概念来理解新事物的思维方法，基于相似性进行推理",
+          "firstPrinciples": [
+            "模式识别",
+            "相似性映射"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点.md",
+          "extractedAt": "2026-04-22T00:06:46.466Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#7ed321"
+    },
+    {
+      "id": "nebula_p_创新",
+      "name": "思维方法",
+      "phase": "crystal",
+      "concepts": [],
+      "protons": [],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#bd10e0"
+    },
+    {
+      "id": "nebula_p_效率",
+      "name": "思维方法",
+      "phase": "crystal",
+      "concepts": [
+        "效率"
+      ],
+      "protons": [
+        {
+          "id": "p_效率",
+          "conceptName": "效率",
+          "content": "以最小资源投入实现最大产出的优化过程",
+          "firstPrinciples": [
+            "资源优化",
+            "成本效益分析"
+          ],
+          "centrality": 0,
+          "abstractness": 0,
+          "sourceNotePath": "人性弱点.md",
+          "extractedAt": "2026-04-22T00:06:46.466Z"
+        }
+      ],
+      "cohesionStrength": 1,
+      "stability": 1,
+      "boundaryPoints": [],
+      "centerOfGravity": {
+        "x": 0,
+        "y": 0
+      },
+      "radius": 60,
+      "energyDensity": 1,
+      "velocity": 0,
+      "createdAt": 1776816406496,
+      "lastActiveAt": 1776816406496,
+      "isNamed": false,
+      "x": 0,
+      "y": 0,
+      "vx": 0,
+      "vy": 0,
+      "color": "#ff5a5a"
+    }
+  ],
+  "crystals": {},
+  "userInterventions": [],
+  "knowledgeLayers": []
+}

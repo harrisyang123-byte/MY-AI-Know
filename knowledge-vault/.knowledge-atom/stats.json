@@ -1,0 +1,218 @@
+{
+  "lastComputedAt": "2026-04-22T00:06:46.628Z",
+  "totalNotes": 2,
+  "totalConcepts": 13,
+  "totalRelations": 25,
+  "conceptStats": {
+    "人性弱点": {
+      "mentionCount": 1,
+      "relationCount": 9,
+      "crossCommunityCount": 8,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_人性弱点"
+      ]
+    },
+    "利己": {
+      "mentionCount": 1,
+      "relationCount": 4,
+      "crossCommunityCount": 2,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_利己"
+      ]
+    },
+    "贪婪": {
+      "mentionCount": 1,
+      "relationCount": 5,
+      "crossCommunityCount": 4,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_贪婪"
+      ]
+    },
+    "恐惧": {
+      "mentionCount": 1,
+      "relationCount": 4,
+      "crossCommunityCount": 3,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_恐惧"
+      ]
+    },
+    "自私": {
+      "mentionCount": 1,
+      "relationCount": 4,
+      "crossCommunityCount": 3,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_自私"
+      ]
+    },
+    "虚荣": {
+      "mentionCount": 1,
+      "relationCount": 4,
+      "crossCommunityCount": 3,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_虚荣"
+      ]
+    },
+    "攀比": {
+      "mentionCount": 1,
+      "relationCount": 3,
+      "crossCommunityCount": 2,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_攀比"
+      ]
+    },
+    "懒惰": {
+      "mentionCount": 1,
+      "relationCount": 3,
+      "crossCommunityCount": 2,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_懒惰"
+      ]
+    },
+    "拖延": {
+      "mentionCount": 1,
+      "relationCount": 4,
+      "crossCommunityCount": 3,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_拖延"
+      ]
+    },
+    "第一性原则": {
+      "mentionCount": 1,
+      "relationCount": 3,
+      "crossCommunityCount": 3,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_第一性原则"
+      ]
+    },
+    "类比思维": {
+      "mentionCount": 1,
+      "relationCount": 3,
+      "crossCommunityCount": 3,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_类比思维"
+      ]
+    },
+    "创新": {
+      "mentionCount": 1,
+      "relationCount": 2,
+      "crossCommunityCount": 2,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_创新"
+      ]
+    },
+    "效率": {
+      "mentionCount": 1,
+      "relationCount": 2,
+      "crossCommunityCount": 2,
+      "intraScore": 0,
+      "crossScore": 1,
+      "currentLevel": "bridge",
+      "levelSource": "auto",
+      "communities": [
+        "nebula_p_效率"
+      ]
+    }
+  },
+  "communityStats": {
+    "nebula_p_人性弱点": {
+      "conceptCount": 1,
+      "avgRelations": 9
+    },
+    "nebula_p_利己": {
+      "conceptCount": 1,
+      "avgRelations": 4
+    },
+    "nebula_p_贪婪": {
+      "conceptCount": 1,
+      "avgRelations": 5
+    },
+    "nebula_p_恐惧": {
+      "conceptCount": 1,
+      "avgRelations": 4
+    },
+    "nebula_p_自私": {
+      "conceptCount": 1,
+      "avgRelations": 4
+    },
+    "nebula_p_虚荣": {
+      "conceptCount": 1,
+      "avgRelations": 4
+    },
+    "nebula_p_攀比": {
+      "conceptCount": 1,
+      "avgRelations": 3
+    },
+    "nebula_p_懒惰": {
+      "conceptCount": 1,
+      "avgRelations": 3
+    },
+    "nebula_p_拖延": {
+      "conceptCount": 1,
+      "avgRelations": 4
+    },
+    "nebula_p_第一性原则": {
+      "conceptCount": 1,
+      "avgRelations": 3
+    },
+    "nebula_p_类比思维": {
+      "conceptCount": 1,
+      "avgRelations": 3
+    },
+    "nebula_p_创新": {
+      "conceptCount": 1,
+      "avgRelations": 2
+    },
+    "nebula_p_效率": {
+      "conceptCount": 1,
+      "avgRelations": 2
+    }
+  }
+}

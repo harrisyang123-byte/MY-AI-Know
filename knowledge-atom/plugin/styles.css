@@ -1,0 +1,1624 @@
+/* ============================================================
+   Knowledge Atom — 全局样式
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   Chat View (kch-*)
+   ------------------------------------------------------------ */
+
+.kch-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background: var(--background-primary);
+	color: var(--text-normal);
+	font-family: var(--font-ui);
+}
+
+/* 工具栏（兼容旧版） */
+.kch-toolbar {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	padding: 8px 12px;
+	flex-shrink: 0;
+	background: var(--background-secondary);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* 新顶部操作栏 */
+.kch-topbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 12px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+	flex-shrink: 0;
+}
+
+.kch-title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--text-normal);
+}
+
+.kch-title-icon {
+	width: 20px;
+	height: 20px;
+	color: var(--interactive-accent);
+}
+
+.kch-topbar-actions {
+	display: flex;
+	gap: 6px;
+}
+
+.kch-topbar-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-muted);
+	border-radius: 6px;
+	padding: 4px 10px;
+	font-size: 12px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.kch-topbar-btn:hover {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border-color: var(--interactive-accent);
+}
+
+.kch-topbar-btn .kch-btn-icon {
+	width: 14px;
+	height: 14px;
+}
+
+.kch-debug-active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border-color: var(--interactive-accent);
+}
+
+/* 新快捷按钮栏 */
+.kch-quickbar {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.kch-quickbtn {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-muted);
+	padding: 7px 14px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 12.5px;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+}
+
+.kch-quickbtn:hover {
+	background: var(--background-secondary);
+	color: var(--text-normal);
+	border-color: var(--text-muted);
+	transform: translateY(-1px);
+}
+
+.kch-quickbtn:active {
+	transform: translateY(0);
+}
+
+.kch-quickbtn-icon {
+	width: 15px;
+	height: 15px;
+}
+
+/* 顶部操作栏 */
+.kch-top-actions {
+	display: flex;
+	gap: 8px;
+	justify-content: flex-end;
+}
+
+.kch-history-btn,
+.kch-graph-btn,
+.kch-debug-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-muted);
+	border-radius: 6px;
+	padding: 4px 10px;
+	font-size: 12px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.kch-history-btn:hover,
+.kch-graph-btn:hover,
+.kch-debug-btn:hover {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border-color: var(--interactive-accent);
+}
+
+.kch-debug-active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border-color: var(--interactive-accent);
+}
+
+/* 快捷操作栏 */
+.kch-quick-actions {
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+}
+
+.kch-quick-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-muted);
+	border-radius: 16px;
+	padding: 6px 14px;
+	font-size: 12px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+}
+
+.kch-quick-btn:hover {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border-color: var(--interactive-accent);
+	transform: translateY(-1px);
+	box-shadow: 0 2px 6px rgba(var(--interactive-accent-rgb), 0.2);
+}
+
+.kch-quick-icon {
+	font-size: 16px;
+}
+
+/* 输入区域 */
+.kch-input-area {
+	border-top: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+	padding: 12px 16px 14px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex-shrink: 0;
+	position: relative;
+	z-index: 10;
+}
+
+.kch-input-wrapper {
+	display: flex;
+	gap: 10px;
+	align-items: flex-end;
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 18px;
+	padding: 10px 14px;
+}
+
+.kch-input-wrapper:focus-within {
+	border-color: var(--interactive-accent);
+	box-shadow: 0 0 0 3px rgba(var(--interactive-accent-rgb), 0.1);
+}
+
+/* 模型选择器 */
+.kch-model-selector {
+	position: relative;
+	flex-shrink: 0;
+}
+
+.kch-model-trigger {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-normal);
+	border-radius: 8px;
+	padding: 6px 10px;
+	font-size: 12px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+}
+
+.kch-model-trigger:hover {
+	border-color: var(--interactive-accent);
+	box-shadow: 0 0 0 3px rgba(var(--interactive-accent-rgb), 0.1);
+}
+
+.kch-model-icon {
+	width: 16px;
+	height: 16px;
+	color: var(--text-muted);
+}
+
+.kch-model-name {
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.kch-model-arrow {
+	width: 14px;
+	height: 14px;
+	color: var(--text-muted);
+	transition: transform 0.2s ease;
+}
+
+/* 模型选择面板 */
+.kch-model-panel {
+	position: absolute;
+	bottom: calc(100% + 8px);
+	right: 0;
+	width: 300px;
+	max-height: 400px;
+	overflow-y: auto;
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 12px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+	display: none;
+	flex-direction: column;
+	z-index: 1000;
+	animation: slideUp 0.2s ease;
+}
+
+.kch-model-panel.kch-panel-open {
+	display: flex;
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.kch-model-panel-header {
+	padding: 10px 12px;
+	font-weight: 600;
+	font-size: 13px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	color: var(--text-normal);
+}
+
+.kch-model-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.kch-model-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 12px;
+	cursor: pointer;
+	transition: background 0.15s ease;
+	white-space: nowrap;
+}
+
+.kch-model-item:hover {
+	background: var(--background-primary);
+}
+
+.kch-model-item.kch-model-item-active {
+	background: rgba(var(--interactive-accent-rgb), 0.1);
+}
+
+.kch-model-item-left {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex: 1;
+	min-width: 0;
+}
+
+.kch-model-item-icon {
+	width: 20px;
+	height: 20px;
+	color: var(--text-muted);
+	flex-shrink: 0;
+}
+
+.kch-model-item-name {
+	font-size: 13px;
+	font-weight: 500;
+	color: var(--text-normal);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.kch-model-capability-badge {
+	font-size: 10px;
+	padding: 2px 6px;
+	border-radius: 4px;
+	background: var(--background-modifier-border);
+	color: var(--text-muted);
+	display: inline-flex;
+	align-items: center;
+	line-height: 1;
+	flex-shrink: 0;
+}
+
+.kch-model-item-capabilities {
+	display: flex;
+	gap: 6px;
+	flex-shrink: 0;
+}
+
+.capability-icon {
+	width: 16px;
+	height: 16px;
+	color: var(--text-muted);
+}
+
+.kch-model-item-check {
+	width: 18px;
+	height: 18px;
+	color: var(--interactive-accent);
+	flex-shrink: 0;
+}
+
+/* 模型悬浮提示框 */
+.kch-model-tooltip {
+	position: absolute;
+	left: calc(100% + 10px);
+	top: 50%;
+	transform: translateY(-50%);
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	padding: 12px;
+	min-width: 180px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s ease;
+	z-index: 1001;
+}
+
+.kch-model-item:hover .kch-model-tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+
+.kch-model-tooltip-title {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--text-normal);
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.kch-model-tooltip-caps {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.capability-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 13px;
+	color: var(--text-muted);
+}
+
+.capability-item svg {
+	width: 16px;
+	height: 16px;
+	color: var(--interactive-accent);
+	flex-shrink: 0;
+}
+
+/* 输入框 */
+.kch-input {
+	flex: 1;
+	background: transparent;
+	border: none;
+	padding: 4px 0;
+	color: var(--text-normal);
+	font-size: 14px;
+	resize: none;
+	min-height: 24px;
+	max-height: 160px;
+	outline: none;
+	line-height: 1.5;
+	font-family: inherit;
+}
+
+.kch-input::placeholder {
+	color: var(--text-faint);
+}
+
+/* 发送按钮 */
+.kch-send-btn {
+	background: linear-gradient(135deg, var(--interactive-accent), var(--interactive-accent));
+	color: var(--text-on-accent);
+	border: none;
+	border-radius: 50%;
+	width: 38px;
+	height: 38px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	box-shadow: 0 4px 12px rgba(var(--interactive-accent-rgb), 0.3);
+}
+
+.kch-send-btn:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 16px rgba(var(--interactive-accent-rgb), 0.4);
+}
+
+.kch-send-btn:active {
+	transform: scale(0.96);
+}
+
+.kch-send-btn svg {
+	width: 18px;
+	height: 18px;
+}
+
+/* 消息区域 */
+.kch-messages {
+	flex: 1;
+	overflow-y: auto;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.kch-welcome {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: var(--text-faint);
+	font-size: 13px;
+	text-align: center;
+	padding: 24px;
+	line-height: 1.8;
+}
+
+.kch-msg {
+	max-width: 95%;
+	animation: kch-fade-in 0.25s ease-out;
+	line-height: 1.6;
+	word-break: break-word;
+}
+
+@keyframes kch-fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(6px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.kch-msg-system {
+	align-self: center;
+	background: var(--background-secondary);
+	color: var(--text-muted);
+	font-size: 11px;
+	padding: 6px 16px;
+	border-radius: 12px;
+	border: 1px solid var(--background-modifier-border);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.kch-msg-user {
+	align-self: flex-end;
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border-radius: 16px 16px 4px 16px;
+	padding: 10px 16px;
+	font-size: 13px;
+	max-width: 80%;
+	box-shadow: 0 2px 8px rgba(var(--interactive-accent-rgb), 0.2);
+}
+
+.kch-msg-assistant {
+	align-self: flex-start;
+	background: var(--background-secondary);
+	color: var(--text-normal);
+	border-radius: 16px 16px 16px 4px;
+	padding: 12px 16px;
+	font-size: 13px;
+	border: 1px solid var(--background-modifier-border);
+	max-width: 92%;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.kch-msg-content {
+	white-space: pre-wrap;
+}
+
+/* 确认按钮区域 */
+.kch-confirm-actions {
+	display: flex;
+	gap: 10px;
+	margin-top: 12px;
+	padding-top: 10px;
+	border-top: 1px solid var(--background-modifier-border);
+	justify-content: flex-end;
+}
+
+.kch-btn-primary {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border: none;
+	border-radius: 8px;
+	padding: 6px 18px;
+	font-size: 12px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	box-shadow: 0 2px 6px rgba(var(--interactive-accent-rgb), 0.15);
+}
+
+.kch-btn-primary:hover {
+	opacity: 0.9;
+	transform: translateY(-1px);
+	box-shadow: 0 3px 8px rgba(var(--interactive-accent-rgb), 0.25);
+}
+
+.kch-btn-ghost {
+	background: none;
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-muted);
+	border-radius: 8px;
+	padding: 6px 18px;
+	font-size: 12px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	font-weight: 500;
+}
+
+.kch-btn-ghost:hover {
+	color: var(--text-normal);
+	border-color: var(--text-muted);
+	background: var(--background-secondary);
+}
+
+/* ------------------------------------------------------------
+   Knowledge Graph View (kgraph-*) - 新设计
+   ------------------------------------------------------------ */
+
+.kgraph-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background: #1e1e1e;
+	color: #ccc;
+	position: relative;
+	font-family: var(--font-ui);
+}
+
+/* 工具栏 */
+.kgraph-toolbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 12px 16px;
+	border-bottom: 1px solid #333;
+	background: #252525;
+	flex-shrink: 0;
+}
+
+.kgraph-toolbar-group {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.kgraph-btn {
+	background: #333;
+	color: #aaa;
+	border: 1px solid #444;
+	border-radius: 6px;
+	padding: 6px 12px;
+	font-size: 12px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+	font-weight: 500;
+}
+
+.kgraph-btn:hover {
+	background: #444;
+	border-color: #555;
+	color: #ddd;
+}
+
+.kgraph-search {
+	background: #333;
+	color: #ddd;
+	border: 1px solid #444;
+	border-radius: 6px;
+	padding: 6px 12px;
+	font-size: 12px;
+	outline: none;
+	min-width: 200px;
+	transition: border-color 0.2s ease;
+}
+
+.kgraph-search:focus {
+	border-color: #888;
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
+}
+
+.kgraph-model-select {
+	background: #ffffff;
+	color: #333;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 6px 10px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+/* 画布
+*/
+.kgraph-canvas-wrapper {
+	flex: 1;
+	position: relative;
+	overflow: hidden;
+}
+
+.kgraph-canvas {
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: grab;
+}
+
+.kgraph-canvas:active {
+	cursor: grabbing;
+}
+
+/* 面板拖拽手柄
+*/
+.kgraph-panel-handle {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 14px;
+	background: #f5f5f5;
+	border-bottom: 1px solid #e0e0e0;
+	cursor: grab;
+	user-select: none;
+	font-weight: 600;
+	font-size: 12px;
+	color: #555;
+	border-radius: 8px 8px 0 0;
+}
+
+.kgraph-panel-handle:active {
+	cursor: grabbing;
+}
+
+/* 图例
+*/
+.kgraph-legend {
+	position: absolute;
+	top: 80px;
+	right: 16px;
+	background: #ffffff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 0;
+	font-size: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	z-index: 10;
+	min-width: 140px;
+}
+
+.kgraph-legend-item {
+	padding: 6px 14px;
+	color: #666;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.kgraph-legend-circle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.kgraph-legend-text {
+	font-size: 12px;
+}
+
+/* 过滤面板
+*/
+.kgraph-filter-panel {
+	position: absolute;
+	top: 80px;
+	left: 16px;
+	background: #252525;
+	border: 1px solid #333;
+	border-radius: 8px;
+	padding: 0;
+	font-size: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+	z-index: 10;
+	width: 220px;
+	max-height: calc(100% - 100px);
+	overflow-y: auto;
+}
+
+.kgraph-filter-group {
+	padding: 10px 14px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.kgraph-filter-group:last-child {
+	border-bottom: none;
+}
+
+.kgraph-filter-label {
+	font-weight: 600;
+	font-size: 11px;
+	margin-bottom: 8px;
+	color: #555;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.kgraph-filter-checkbox {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 4px 0;
+	cursor: pointer;
+	color: #666;
+	font-size: 12px;
+	transition: opacity 0.15s ease;
+}
+
+.kgraph-filter-checkbox:hover {
+	color: #333;
+}
+
+.kgraph-filter-checkbox input[type="checkbox"] {
+	margin: 0;
+	accent-color: #6366f1;
+}
+
+.kgraph-filter-slider {
+	width: 100%;
+	margin-top: 6px;
+	accent-color: #6366f1;
+}
+
+/* 进度对话框
+*/
+.kgraph-progress-dialog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #ffffff;
+	border: 1px solid #e0e0e0;
+	border-radius: 12px;
+	padding: 24px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+	z-index: 100;
+	min-width: 320px;
+}
+
+.kgraph-progress-header {
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.kgraph-progress-bar {
+	width: 100%;
+	height: 8px;
+	background: #f0f0f0;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+
+.kgraph-progress-fill {
+	height: 100%;
+	background: linear-gradient(90deg, #6366f1, #8b5cf6);
+	width: 0%;
+	transition: width 0.3s ease;
+	border-radius: 4px;
+}
+
+.kgraph-progress-message {
+	font-size: 13px;
+	color: #666;
+	text-align: center;
+}
+
+/* ------------------------------------------------------------
+   调试日志面板
+   ------------------------------------------------------------ */
+
+.kch-debug-panel {
+	border-top: 2px solid var(--interactive-accent);
+	background: var(--background-secondary);
+	max-height: 300px;
+	overflow-y: auto;
+	flex-shrink: 0;
+	font-family: var(--font-monospace);
+	font-size: 11px;
+}
+
+.kch-debug-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 6px 12px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	font-weight: 600;
+	color: var(--text-normal);
+	position: sticky;
+	top: 0;
+	background: var(--background-secondary);
+	z-index: 5;
+}
+
+.kch-debug-clear {
+	background: none;
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-muted);
+	border-radius: 4px;
+	padding: 2px 8px;
+	font-size: 10px;
+	cursor: pointer;
+}
+
+.kch-debug-clear:hover {
+	color: var(--text-normal);
+	border-color: var(--text-muted);
+}
+
+.kch-debug-empty {
+	padding: 16px;
+	text-align: center;
+	color: var(--text-faint);
+}
+
+.kch-debug-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.kch-debug-entry {
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.kch-debug-summary {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 5px 12px;
+	cursor: pointer;
+	transition: background 0.1s;
+}
+
+.kch-debug-summary:hover {
+	background: var(--background-primary);
+}
+
+.kch-debug-icon {
+	flex-shrink: 0;
+	font-size: 12px;
+}
+
+.kch-debug-time {
+	color: var(--text-faint);
+	flex-shrink: 0;
+	font-size: 10px;
+}
+
+.kch-debug-text {
+	color: var(--text-muted);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.kch-debug-request .kch-debug-text {
+	color: var(--text-accent);
+}
+
+.kch-debug-response .kch-debug-text {
+	color: var(--text-success);
+}
+
+.kch-debug-error .kch-debug-text {
+	color: var(--text-error);
+}
+
+.kch-debug-detail {
+	padding: 6px 12px 8px 30px;
+	color: var(--text-muted);
+	white-space: pre-wrap;
+	word-break: break-all;
+	background: var(--background-primary);
+}
+
+/* 知识图谱聊天面板 */
+.kgraph-chat-panel {
+	position: absolute;
+	right: 20px;
+	top: 80px;
+	width: 380px;
+	max-height: 500px;
+	background: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 12px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-direction: column;
+	z-index: 100;
+}
+
+.kgraph-panel-close {
+	background: none;
+	border: none;
+	color: #999;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 0;
+	margin-left: auto;
+}
+
+.kgraph-panel-close:hover {
+	color: #333;
+}
+
+.kgraph-chat-messages {
+	flex: 1;
+	overflow-y: auto;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	min-height: 200px;
+}
+
+.kgraph-chat-welcome {
+	color: #666;
+	font-size: 13px;
+	text-align: center;
+	padding: 20px;
+	line-height: 1.6;
+}
+
+.kgraph-chat-message {
+	max-width: 90%;
+	padding: 10px 14px;
+	border-radius: 12px;
+	font-size: 13px;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+
+.kgraph-chat-message-user {
+	align-self: flex-end;
+	background: #6366f1;
+	color: white;
+	border-bottom-right-radius: 4px;
+}
+
+.kgraph-chat-message-assistant {
+	align-self: flex-start;
+	background: #f0f0f0;
+	color: #333;
+	border-bottom-left-radius: 4px;
+}
+
+.kgraph-chat-message-system {
+	align-self: center;
+	background: #fff3cd;
+	color: #856404;
+	font-size: 12px;
+	padding: 6px 12px;
+	border-radius: 8px;
+}
+
+.kgraph-chat-message-content {
+	white-space: pre-wrap;
+}
+
+.kgraph-chat-input-area {
+	padding: 12px;
+	border-top: 1px solid #ddd;
+	background: #fafafa;
+	flex-shrink: 0;
+}
+
+.kgraph-chat-input-wrapper {
+	display: flex;
+	gap: 10px;
+	align-items: flex-end;
+}
+
+.kgraph-chat-input {
+	flex: 1;
+	background: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 10px 12px;
+	font-size: 13px;
+	resize: none;
+	outline: none;
+	font-family: var(--font-ui);
+	transition: border-color 0.2s ease;
+}
+
+.kgraph-chat-input:focus {
+	border-color: #6366f1;
+	box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.kgraph-chat-send-btn {
+	background: #6366f1;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 16px;
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	white-space: nowrap;
+}
+
+.kgraph-chat-send-btn:hover {
+	background: #4f46e5;
+	transform: translateY(-1px);
+}
+
+.kgraph-chat-send-btn:active {
+	transform: translateY(0);
+}
+
+.kch-debug-panel::-webkit-scrollbar {
+	width: 4px;
+}
+
+.kch-debug-panel::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.kch-debug-panel::-webkit-scrollbar-thumb {
+	background: var(--background-modifier-border);
+	border-radius: 2px;
+}
+
+/* ------------------------------------------------------------
+   设置界面模型列表
+   ------------------------------------------------------------ */
+
+.kch-model-list-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+	margin-bottom: 4px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.kch-model-list-header h4 {
+	margin: 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--text-normal);
+}
+
+.kch-model-list-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-muted);
+	border-radius: 8px;
+	padding: 6px 12px;
+	font-size: 12px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.kch-model-list-toggle:hover {
+	background: var(--background-primary);
+	border-color: var(--interactive-accent);
+	color: var(--text-normal);
+}
+
+.kch-model-list-toggle:active {
+	transform: scale(0.97);
+}
+
+.kch-model-list-content {
+	margin-top: 10px;
+	overflow: hidden;
+	transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.kch-model-card {
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	padding: 12px;
+	margin-bottom: 10px;
+	transition: all 0.2s ease;
+}
+
+.kch-model-card:hover {
+	border-color: var(--text-muted);
+}
+
+.kch-model-card-title {
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--text-normal);
+	margin-bottom: 10px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.kch-model-card-btns {
+	display: flex;
+	gap: 8px;
+	margin-top: 8px;
+}
+
+/* ------------------------------------------------------------
+   滚动条样式
+   ------------------------------------------------------------ */
+
+.kch-messages::-webkit-scrollbar,
+.kgraph-filter-panel::-webkit-scrollbar,
+.kch-model-panel::-webkit-scrollbar {
+	width: 6px;
+}
+
+.kch-messages::-webkit-scrollbar-track,
+.kgraph-filter-panel::-webkit-scrollbar-track,
+.kch-model-panel::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.kch-messages::-webkit-scrollbar-thumb,
+.kgraph-filter-panel::-webkit-scrollbar-thumb,
+.kch-model-panel::-webkit-scrollbar-thumb {
+	background: var(--background-modifier-border);
+	border-radius: 3px;
+	transition: background 0.15s ease;
+}
+
+.kch-messages::-webkit-scrollbar-thumb:hover,
+.kgraph-filter-panel::-webkit-scrollbar-thumb:hover,
+.kch-model-panel::-webkit-scrollbar-thumb:hover {
+	background: var(--text-muted);
+}
+
+/* ------------------------------------------------------------
+   Graph Settings Panel
+   ------------------------------------------------------------ */
+
+.kgraph-settings-panel {
+	position: absolute;
+	top: 60px;
+	right: 16px;
+	width: 280px;
+	max-height: calc(100% - 80px);
+	overflow-y: auto;
+	background: #ffffff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 16px;
+	font-size: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	z-index: 10;
+	color: #333333;
+}
+
+.kgraph-settings-panel h4 {
+	color: #333333 !important;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 16px 0 10px 0;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.kgraph-settings-panel h4:first-child {
+	margin-top: 0;
+}
+
+.kgraph-settings-panel .setting-item {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 8px 0;
+	margin-bottom: 2px;
+}
+
+.kgraph-settings-panel .setting-item-name {
+	color: #333333 !important;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.kgraph-settings-panel .setting-item-control {
+	margin-top: 6px;
+}
+
+.kgraph-settings-panel input[type="range"] {
+	width: 100%;
+	accent-color: #6366f1;
+}
+
+.kgraph-settings-panel .setting-item-desc {
+	color: #666666 !important;
+	font-size: 11px;
+}
+
+.kgraph-settings-heading {
+	color: #333333 !important;
+	margin-top: 16px !important;
+	margin-bottom: 8px !important;
+}
+
+.kgraph-setting-item {
+	margin-bottom: 8px !important;
+}
+
+.kgraph-setting-item .setting-item-name {
+	color: #333333 !important;
+}
+
+.kgraph-sidebar {
+	position: absolute;
+	top: 60px;
+	right: 16px;
+	width: 280px;
+	max-height: calc(100% - 80px);
+	overflow-y: auto;
+	background: #252525;
+	border: 1px solid #333;
+	border-radius: 8px;
+	padding: 16px;
+	font-size: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+	z-index: 10;
+}
+
+.kgraph-sidebar-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #333;
+	color: #eee;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.kgraph-sidebar-close {
+	background: none;
+	border: none;
+	color: #888;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 2px 6px;
+	border-radius: 4px;
+}
+
+.kgraph-sidebar-close:hover {
+	color: #fff;
+	background: #333;
+}
+
+.kgraph-sidebar-section {
+	margin-bottom: 16px;
+}
+
+.kgraph-sidebar-title {
+	color: #aaa !important;
+	font-size: 11px !important;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 0 0 8px 0 !important;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #333;
+}
+
+.kgraph-sidebar h4 {
+	color: #aaa;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 12px 0 8px 0;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #333;
+}
+
+.kgraph-sidebar h4:first-child {
+	margin-top: 0;
+}
+
+.kgraph-sidebar-label {
+	color: #999;
+	font-size: 11px;
+}
+
+.kgraph-sidebar-confirm-btn {
+	background: #333;
+	color: #aaa;
+	border: 1px solid #444;
+	border-radius: 4px;
+	padding: 3px 10px;
+	font-size: 11px;
+	cursor: pointer;
+	transition: all 0.15s;
+}
+
+.kgraph-sidebar-confirm-btn:hover {
+	background: #444;
+	color: #ddd;
+}
+
+.kgraph-sidebar-confirm-btn.confirmed {
+	background: #2d5a2d;
+	color: #7ed321;
+	border-color: #3a7a3a;
+}
+
+.kgraph-sidebar-item {
+	padding: 8px 0;
+	border-bottom: 1px solid #2a2a2a;
+}
+
+.kgraph-sidebar-input {
+	width: 100%;
+	background: #333;
+	color: #ddd;
+	border: 1px solid #444;
+	border-radius: 4px;
+	padding: 4px 8px;
+	font-size: 12px;
+	outline: none;
+	margin-bottom: 4px;
+}
+
+.kgraph-sidebar-input:focus {
+	border-color: #888;
+}
+
+.kgraph-sidebar-info {
+	color: #888;
+	font-size: 11px;
+}
+
+.kgraph-sidebar-state {
+	margin: 4px 0;
+}
+
+.kgraph-sidebar-select {
+	background: #333;
+	color: #ddd;
+	border: 1px solid #444;
+	border-radius: 4px;
+	padding: 2px 6px;
+	font-size: 11px;
+	outline: none;
+}
+
+.kgraph-sidebar-empty {
+	color: #666;
+	text-align: center;
+	padding: 20px;
+}
+
+.kgraph-context-menu {
+	position: fixed;
+	background: #2a2a2a;
+	border: 1px solid #444;
+	border-radius: 6px;
+	padding: 4px 0;
+	min-width: 160px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+	z-index: 10000;
+}
+
+.kgraph-context-item {
+	padding: 8px 16px;
+	color: #ccc;
+	font-size: 12px;
+	cursor: pointer;
+	transition: background 0.1s;
+}
+
+.kgraph-context-item:hover {
+	background: #3a3a3a;
+	color: #fff;
+}
+
+.kgraph-context-item-danger {
+	color: #ff6b6b;
+}
+
+.kgraph-context-item-danger:hover {
+	background: #4a2020;
+	color: #ff8888;
+}
+
+.kgraph-context-divider {
+	height: 1px;
+	background: #444;
+	margin: 4px 0;
+}
+
+.kgraph-modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+}
+
+.kgraph-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #252525;
+	border: 1px solid #333;
+	border-radius: 12px;
+	padding: 24px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+	z-index: 10000;
+	min-width: 400px;
+	max-width: 600px;
+	max-height: 80vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.kgraph-modal-header {
+	font-size: 18px;
+	font-weight: bold;
+	color: #eee;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #333;
+}
+
+.kgraph-modal-desc {
+	margin-bottom: 15px;
+	color: #999;
+	font-size: 14px;
+}
+
+.kgraph-modal-list {
+	flex: 1;
+	overflow-y: auto;
+	margin-bottom: 15px;
+}
+
+.kgraph-modal-item {
+	padding: 12px;
+	border: 1px solid #333;
+	border-radius: 6px;
+	margin-bottom: 8px;
+	background: #2a2a2a;
+}
+
+.kgraph-modal-item-top {
+	display: flex;
+	align-items: center;
+}
+
+.kgraph-modal-item-detail {
+	font-size: 13px;
+	color: #888;
+	margin-top: 8px;
+}
+
+.kgraph-modal-buttons {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	padding-top: 15px;
+	border-top: 1px solid #333;
+}
+
+.kgraph-modal-btn {
+	padding: 8px 16px;
+	border-radius: 6px;
+	font-size: 13px;
+	cursor: pointer;
+	transition: all 0.15s;
+}
+
+.kgraph-modal-btn-cancel {
+	background: #333;
+	color: #ccc;
+	border: 1px solid #444;
+}
+
+.kgraph-modal-btn-cancel:hover {
+	background: #444;
+}
+
+.kgraph-modal-btn-confirm {
+	background: #6366f1;
+	color: #fff;
+	border: none;
+}
+
+.kgraph-modal-btn-confirm:hover {
+	opacity: 0.9;
+}
