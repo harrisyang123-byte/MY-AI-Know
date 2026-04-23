@@ -5,7 +5,7 @@
   },
   "env": {
     "ANTHROPIC_BASE_URL": "https://api.minimaxi.com/anthropic",
-    "ANTHROPIC_API_KEY": "YOUR_API_KEY_HERE",
+    "ANTHROPIC_API_KEY": "sk-cp-X8eDfc1VJlwLedmR9bJANMxKVx-Qs1-Emp9W3kL5smj0HkfxHBwmpt7hstWKEAIb_Zz46vDiBm7Cta-blmS7hE6LbVNHrQpM2AhWM96cpyQaiDNFa31ApLI",
     "PROJECT_NAME": "AI-atom"
   },
   "hooks": {

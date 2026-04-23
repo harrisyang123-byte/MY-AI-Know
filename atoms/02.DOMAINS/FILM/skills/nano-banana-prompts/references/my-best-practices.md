@@ -298,3 +298,37 @@ printed font, digital vector, uniform stroke weight, perfectly straight lines, p
 当参考图的拍摄方向和当前分镜方向一致时，只需说 `Same camera direction as reference image 1`，不需要重新描述机位方向（如"camera on west wall facing east"）。重复描述机位反而会让模型产生混乱，偏离参考图。
 
 适用：同一场景内，机位方向不变，只改变景别（如从全景推进到近景）。
+
+---
+
+## 人物视线方向控制（参考图模式）
+
+### 模型不"认识"参考图中的物体，但认识画面结构
+
+参考图模式下，模型把图片当风格/外观参考，不解析语义内容。它不知道"右上角亮区是窗户"，但**它认识画面的空间结构**——前景、中景、远景、背景。
+
+**核心策略：先定方向（画面结构），再定目标（语义物体）。**
+
+- ❌ `look toward the window` — 模型不知道window在哪，会自己编一个
+- ❌ `look toward the right` — 方向词不稳定，模型理解不一致
+- ✅ `look toward the far background of the image, toward the distant window` — 先说"看向远景"（画面结构，模型必理解），再补充"远景处的窗户"（语义锚定）
+
+**为什么有效：** "远景/far background"是画面构图概念，模型100%理解；"窗户/window"是语义识别，模型在参考图模式下理解不稳定。先用构图方向锁定视线，再用语义词锚定目标物体。
+
+### 单图微调：只改一个动作时，先锁死再放行
+
+当参考图已经满意，只需要改一个动作（如转头）时：
+
+1. 开头声明：`IDENTICAL to reference image 1 in every detail`
+2. 明确唯一变化：`Only one change: the man turns his head to look toward [方向]`
+3. 补充视觉证据：`Cold pale light from the distant window is visible in his pupils`
+4. 收尾：`Everything else unchanged`
+
+**原则：描述越少，模型越不容易偏离参考图。** 每多描述一个细节，模型就多一个"自由发挥"的机会。
+
+### 瞳孔反光是视线方向的视觉证据
+
+单纯描述"看向某处"模型可能只转眼不转头，或转头角度不够。加上瞳孔反光描述，等于给模型一个必须满足的视觉条件：
+
+- `Cold pale light from the distant window is visible in his pupils` — 冷光出现在瞳孔中 = 头必须转到能让瞳孔接收到那个方向光的程度
+- 这不是装饰性描述，是**强制约束**：要满足"瞳孔中有冷光"，头就必须转到正确角度

@@ -2,6 +2,7 @@
 title: 大清李鸿章 — 电影创作项目
 description: 使用 creative-architect 完整流程创作的电影项目
 status: in_progress
+agent: creative-architect
 ---
 
 # 大清李鸿章 — 项目 Spec
@@ -183,5 +184,4 @@ examples/daqing-lihongzhang/
 新对话开始时：
 1. 读取本文件，确认当前进度和待完成场景
 2. 调用 `creative-architect` agent，按阶段四 checklist 继续执行
-3. 台词按需从飞书提取（参考 #[[file:00-scene-mapping.md]] 的场景对应关系）
-4. 如需修改艺术指导，参考 #[[file:03-art-direction-process.md]]
+3. 如需修改艺术指导，参考 #[[file:03-art-direction-process.md]]
