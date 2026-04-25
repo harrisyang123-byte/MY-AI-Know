@@ -16,11 +16,11 @@
       "triggers": ["电影创作", "叙事", "分镜", "美术指导", "视觉定调"]
     },
     {
-      "name": "prompt-alchemist",
-      "path": "atoms/02.DOMAINS/FILM/agents/prompt-alchemist.md",
+      "name": "lumen-planner",
+      "path": "atoms/02.DOMAINS/FILM/agents/lumen-planner.md",
       "domain": "FILM",
-      "description": "提示词翻译官。将分镜稿转换为 AI 图像/视频生成提示词。",
-      "triggers": ["提示词", "图像生成", "视频生成", "nano-banana", "seedance", "生成提示词", "做提示词", "转提示词"]
+      "description": "AI视觉设计Agent，将模糊需求或分镜稿转化为精确视觉产物。7层提示词架构、5步空间推理、8维图像分析、3层上下文管理、智能工具选择、3种迭代模式。适用于图像生成、海报设计、产品摄影、场景设计、多角度一致生成。",
+      "triggers": ["图像生成", "海报设计", "产品摄影", "场景设计", "多角度", "提示词生成", "生成图片", "做图", "设计图", "视觉设计", "lumen"]
     },
     {
       "name": "superpowers-dev",
@@ -50,7 +50,7 @@
     { "name": "film-art-direction",    "path": "atoms/02.DOMAINS/FILM/skills/film-art-direction",    "domain": "FILM" },
     { "name": "film-performance",      "path": "atoms/02.DOMAINS/FILM/skills/film-performance",      "domain": "FILM" },
     { "name": "film-directing",        "path": "atoms/02.DOMAINS/FILM/skills/film-directing",        "domain": "FILM" },
-    { "name": "nano-banana-prompts",   "path": "atoms/02.DOMAINS/FILM/skills/nano-banana-prompts",   "domain": "FILM" },
+    { "name": "lumen-planner",       "path": "atoms/02.DOMAINS/FILM/skills/lumen-planner",         "domain": "FILM" },
     { "name": "nano-banana-pro",       "path": "atoms/02.DOMAINS/FILM/skills/nano-banana-pro",       "domain": "FILM" },
     { "name": "seedance-prompts",      "path": "atoms/02.DOMAINS/FILM/skills/seedance-prompts",      "domain": "FILM" },
     { "name": "brainstorming",         "path": "atoms/01.CORE/skills/brainstorming",                 "domain": "CORE" },

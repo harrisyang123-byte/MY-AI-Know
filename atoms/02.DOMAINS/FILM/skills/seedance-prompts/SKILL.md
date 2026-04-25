@@ -1,6 +1,6 @@
 ---
 name: seedance-prompts
-description: Seedance 2.0 视频提示词生成 skill。将已生成的参考图和分镜稿的镜头运动描述转化为 Seedance 2.0 可执行的视频提示词。适用于 prompt-alchemist 的视频生成阶段，输入为 nano-banana-prompts 生成的图像。
+description: Seedance 2.0 视频提示词生成 skill。将已生成的参考图和分镜稿的镜头运动描述转化为 Seedance 2.0 可执行的视频提示词。适用于 Lumen Planner Agent 的视频生成阶段，输入为 Lumen Planner 生成的图像。
 ---
 
 # Seedance Prompts
@@ -21,7 +21,7 @@ description: Seedance 2.0 视频提示词生成 skill。将已生成的参考图
 
 ## 输入
 
-- 参考图：nano-banana-prompts 生成的静态图
+- 参考图：lumen-prompts 生成的静态图
 - 镜头运动：来自分镜稿的镜头运动描述（推/拉/摇/移/跟/静止）
 - 时长：来自分镜稿的时长预估
 

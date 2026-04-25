@@ -1,6 +1,6 @@
 ---
 name: film-directing
-description: 电影场景级导演执行 skill，整合 Daniel Arijon《电影语言的语法》、Joseph Mascelli《镜头在说话》（五个C）、Steven Katz《电影导演画面调度》（Shot by Shot）。用于具体场景的分镜设计：A/I/L调度模式、景深调度、镜头角度选择、构图原则、摄影机运动叙事功能、Q&A叙事逻辑、180°轴线、三角机位、30°规则、三大匹配原则。输出自动整合 film-visual-language、film-performance、film-art-direction 的结果，生成可直接交给 prompt-alchemist 的完整分镜稿。
+description: 电影场景级导演执行 skill，整合 Daniel Arijon《电影语言的语法》、Joseph Mascelli《镜头在说话》（五个C）、Steven Katz《电影导演画面调度》（Shot by Shot）。用于具体场景的分镜设计：A/I/L调度模式、景深调度、镜头角度选择、构图原则、摄影机运动叙事功能、Q&A叙事逻辑、180°轴线、三角机位、30°规则、三大匹配原则。输出自动整合 film-visual-language、film-performance、film-art-direction 的结果，生成可直接交给 Lumen Planner Agent 的完整分镜稿。
 ---
 
 # Film Directing

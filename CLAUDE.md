@@ -17,6 +17,7 @@
 - ❌ 不问就直接改文件/跑命令/创建删除文件
 - ❌ 用户说"启动项目"时自动开始干活——先问清楚
 - ❌ 空洞认同（"好的"、"没问题"）——认同要说清为什么
+- ❌ 收到创作类任务（提示词、分镜、艺术指导）时，不读 atoms/ 对应的 agent/skill 文件就直接做
 
 ### 交互风格
 - 用中文回复
@@ -148,6 +149,24 @@
 - 有对应 skill → 读取该 skill 文件，按其流程和输出格式执行
 - 用户说"加载 X"、"用 X"、"切换到 X" → 读取对应文件并执行
 
+### 第三步：任务识别与路由（创作类任务强制检查）
+
+当用户发出以下类型的任务时，**必须先加载对应的 agent/skill 文件，不读完不开始**：
+
+| 用户任务关键词 | 应加载的文件 | 不执行的后果 |
+|--------------|------------|------------|
+| 生成图像 / 做图 / 海报设计 / 视觉设计 / 提示词 | `atoms/02.DOMAINS/FILM/agents/lumen-planner.md` | 跳过7层提示词架构、跳过空间推理、跳过工具选择决策 |
+| 分镜 / 镜头设计 / 导演 | `atoms/02.DOMAINS/FILM/agents/creative-architect.md` | 跳过8步流程、直接输出结果 |
+| 做分镜 / 分镜构思 | `atoms/02.DOMAINS/FILM/skills/film-directing/SKILL.md` | 跳过第零步到第四步 |
+| 艺术指导 / 视觉风格 | `atoms/02.DOMAINS/FILM/skills/art-direction/SKILL.md` | 跳过材质情感温度校验 |
+
+**强制检查点：**
+```
+收到创作类任务 → 问自己：atoms/ 里有没有对应的 agent/skill？
+如果有 → 读取文件 → 按流程执行 → 在关键节点停下等确认
+如果没有 → 才用通用流程
+```
+
 ### 如果没有 atoms/
 回退到通用流程：
 1. 读取项目根目录的 README 或核心文档了解上下文
@@ -170,11 +189,32 @@
 | `gemini-3-flash` | Gemini 3 Flash | Google | 免费/便宜 | 快速，日常首选 |
 | `gemini-3-pro` | Gemini 3 Pro | Google | $2/$12 | 深度推理 |
 | `gemini-3-flash-lite` | Flash Lite | Google | 最便宜 | 超轻量 |
-| `deepseek-chat` | DeepSeek V3 | DeepSeek | ¥1/¥2M | **最便宜**，中文强 |
+| `deepseek-chat` | DeepSeek V3 | DeepSeek | ¥1/¥2M | 便宜，中文强 |
 | `deepseek-reasoner` | DeepSeek R1 | DeepSeek | ¥4/¥16M | 推理链，复杂任务 |
+| `deepseek-v4-pro` | DeepSeek V4 Pro | DeepSeek | — | V4旗舰，强推理+创作 |
+| `deepseek-v4-flash` | DeepSeek V4 Flash | DeepSeek | — | V4快速版，高性价比 |
 | `qwen-turbo` | Qwen Turbo | 阿里 | ¥0.8/M | 极便宜，速度快 |
 | `qwen-plus` | Qwen Plus | 阿里 | ¥2/M | 均衡 |
 
+### DeepSeek V4 切换方式
+
+V4 模型使用独立配置文件切换（base_url 不变，model 参数改变）：
+
+```powershell
+# 切换到 V4 Pro（旗舰推理）
+copy ".claude\settings-deepseek-v4-pro.json" ".claude\settings.json"
+
+# 切换到 V4 Flash（快速版）
+copy ".claude\settings-deepseek-v4-flash.json" ".claude\settings.json"
+
+# 切换回 V3 Chat
+copy ".claude\settings-deepseek-chat.json" ".claude\settings.json"
+
+# 切换回 R1 Reasoner
+copy ".claude\settings-deepseek-reasoner.json" ".claude\settings.json"
+```
+
 ### 默认模型
 - **gemini-3-flash** — 平衡速度与能力
-- **deepseek-chat** — 省钱首选（需配置 Key）
+- **deepseek-v4-flash** — DeepSeek 快速首选
+- **deepseek-v4-pro** — DeepSeek 深度任务首选
