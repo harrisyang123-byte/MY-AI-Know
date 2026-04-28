@@ -91,7 +91,7 @@
 
 两人并排而坐，都面向墙，但完全沉浸在各自的世界里，没有交流。这个画面讲述"同一屋檐下，两个世界"的核心矛盾。
 
-wide shot, eye level, 35mm lens, f/2.8, cinematic composition, split lighting, warm cool contrast, white ergonomic chair, black ergonomic chair, window on left side, hand-drawn illustration style, Japanese illustration style, warm healing tone, soft colors, 3:4 aspect ratio, no dialogue bubbles
+wide shot, eye level, 35mm lens, f/2.8, cinematic composition, split lighting, warm cool contrast, white ergonomic chair, black ergonomic chair, window on left side, hand-drawn illustration style, Japanese illustration style, warm healing tone, soft colors, 3:4 aspect ratio, no dialogue bub bles
 
 ---
 
@@ -133,7 +133,7 @@ looking at each other, conversation, even lighting, single light source, bright 
 
 **下格（情绪落点）：** 参考图1中的年轻女性面部特写，听到回应后，她脸上的笑容有瞬间的凝固，眼神里的光芒稍稍黯淡，然后又努力恢复了笑容。表情笑容凝固、眼神黯淡、一丝失落。背景虚化。
 
-上下两格布局， 3:4 aspect ratio, split frame composition, medium close-up for upper frame, close-up for lower frame, 50mm lens, f/1.8, shallow depth of field, hand-drawn illustration style, Japanese illustration style, warm healing tone, soft colors
+上下两格布局， 3:4 aspect ratio, split frame composition, medium close-up for upper frame, close-up for lower frame, 50mm lens, f/1.8, shallow depth of field, hand-drawn illustration style, Japanese illustration style, w   arm healing tone, soft colors
 
 ---
 
@@ -253,7 +253,7 @@ multiple people in one frame, even lighting, dark interior, cartoon style, flat 
 
 ### 正向提示词：
 
-**格 1（9:00 期待）：** 参考图1中的年轻女性中近景，站在大门口，身体姿态轻松。她穿着精心搭配的出游服装：白色短袖搭配淡黄色宽松裤子，穿着白色运动鞋。嘴角上扬，眼睛弯成月牙，脸上带着灿烂的微笑，眼神明亮充满期待。一手拿手机看时间，一手自然下垂，身体微微前倾，姿态轻松。眼神看向卧室方向，充满期待。背景是大门口，身后是玄关，可以看到部分客厅。早晨的自然光从窗户洒入。
+**格 1（9:00 期待）：** 参考图1中的年轻女性中近景，站在入户门附近的玄关区域，身体姿态轻松。她穿着精心搭配的出游服装：白色短袖搭配淡黄色宽松裤子，穿着白色运动鞋。嘴角上扬，眼睛弯成月牙，脸上带着灿烂的微笑，眼神明亮充满期待。一手拿手机看时间，一手自然下垂，身体微微前倾，姿态轻松。眼神看向卧室方向，充满期待。背景是玄关区域（鞋柜、全身镜、挂衣钩），可以看到前方的客厅区域（沙发、茶几）。早晨的自然光从阳台落地窗洒入。
 
 **格 2（9:15 疑惑）：** 参考图1中的年轻女性中近景，同一位置，但姿态开始变化。她穿着同样的出游服装：白色短袖搭配淡黄色宽松裤子，穿着白色运动鞋。笑容已经消失，眉头微微皱起，嘴角放平，眼神里带着一丝困惑和不解。双手抱胸，身体重心换到另一条腿，开始显出不耐烦的姿态。眼神看向卧室方向，但眼神里多了几分质疑。背景相同，光线一致。
 
@@ -292,13 +292,13 @@ different characters, different outfits, different backgrounds, even lighting, c
 
 ### 正向提示词：
 
-小源的主观视角（POV）。从洗手间门口看向玄关。
+小源的主观视角（POV）。从洗手间门口看向玄关+客厅。
 
 前景：参考图2中的年轻男性刚从洗手间出来，睡眼惺忪，头发还有点乱。他穿着灰色长袖长裤睡衣，表情无辜、困惑，刚洗漱完的样子。他的身体在画面边缘，只能看到部分身体。
 
-中景：参考图1中的年轻女性站在大门口，双臂抱在胸前，正怒视着前方。她穿着精心搭配的出游服装：白色短袖搭配淡黄色宽松裤子，穿着白色运动鞋。眉头紧锁，眼神犀利，压着火气，整个人散发着强大的气场。她的姿态紧绷，双臂紧紧抱在胸前，身体前倾，形成压迫感。
+中景：参考图1中的年轻女性站在入户门附近的玄关区域，双臂抱在胸前，正怒视着前方。她穿着精心搭配的出游服装：白色短袖搭配淡黄色宽松裤子，穿着白色运动鞋。眉头紧锁，眼神犀利，压着火气，整个人散发着强大的气场。她的姿态紧绷，双臂紧紧抱在胸前，身体前倾，形成压迫感。
 
-背景是玄关，可以看到大门口和部分客厅。早晨的自然光从窗户洒入。
+背景是玄关区域（鞋柜、全身镜、挂衣钩），可以看到前方的客厅区域（沙发、茶几）和阳台落地窗。早晨的自然光从阳台落地窗洒入。
 
 POV shot, medium shot, eye level, 35mm lens, f/2.8, shallow depth of field, cinematic composition, hand-drawn illustration style, Japanese illustration style, warm healing tone, soft colors, 3:4 aspect ratio, conflict tension
 
@@ -316,7 +316,7 @@ standing side by side, even lighting, bright interior, cartoon style, flat light
 需要上传 3 张参考图：
 - 参考图1：小茉的人物形象
 - 参考图2：小源的人物形象
-- 参考图3：空间图 C（玄关场景）
+- 参考图3：空间图 C（玄关+客厅场景）
 
 ---
 
@@ -432,9 +432,9 @@ front view, even lighting, cloudy day, cartoon style, flat lighting
 
 ### 正向提示词：
 
-周六晚上，温馨的客厅场景。与图 1 呼应，但不再是冷暖光分割，而是统一的暖光。
+周六晚上，温馨的玄关+客厅场景。玄关和客厅是同一个连续的大空间。与图 1 呼应，但不再是冷暖光分割，而是统一的暖光。
 
-客厅的暖白色沙发上，两人都换上了舒适的睡衣，以最放松的姿态依偎在一起，身上盖着一条浅色毯子。
+客厅区域的暖白色沙发上，两人都换上了舒适的睡衣，以最放松的姿态依偎在一起，身上盖着一条浅色毯子。
 
 小茉：参考图1中的年轻女性，穿着紫色长袖长裤睡衣，安心地靠在小源的肩膀上，表情满足、安心。
 
@@ -442,9 +442,11 @@ front view, even lighting, cloudy day, cartoon style, flat lighting
 
 他们面前的茶几上放着水果盘，电视里播放着柔和的画面。整个场景被落地灯的暖黄色光笼罩，非常温馨。两人共同沐浴在统一的、温暖的灯光下，身体紧紧挨在一起。
 
+背景可以看到玄关区域（鞋柜、全身镜的轮廓）和阳台落地窗（窗帘拉上，外面是夜晚的城市灯光），整个空间是连通的。
+
 这个画面与图 1 形成对比：图 1 是冷暖光分割的两个世界，图 9 是统一暖光的和谐世界。
 
-wide shot, eye level, 35mm lens, f/2.8, warm ambient light, living room, cozy atmosphere, hand-drawn illustration style, Japanese illustration style, warm healing tone, soft colors, 3:4 aspect ratio, harmonious ending
+wide shot, eye level, 35mm lens, f/2.8, warm ambient light, open plan living space, entrance hall connected to living room, large balcony floor-to-ceiling window, cozy atmosphere, hand-drawn illustration style, Japanese illustration style, warm healing tone, soft colors, 3:4 aspect ratio, harmonious ending
 
 ---
 
@@ -460,7 +462,7 @@ warm cool contrast, sitting apart, even lighting, cold tones, cartoon style, fla
 需要上传 3 张参考图：
 - 参考图1：小茉的人物形象
 - 参考图2：小源的人物形象
-- 参考图3：空间图 D（客厅场景）
+- 参考图3：空间图 D（玄关+客厅场景）
 
 ---
 
@@ -526,3 +528,5 @@ warm cool contrast, sitting apart, even lighting, cold tones, cartoon style, fla
 - v4：添加手绘插画风风格标签（hand-drawn illustration style）
 - v5：细化书房场景，两张桌子拼在一起，两人面向墙，窗户在左侧，白色/黑色人体工学椅
 - v6：修正卧室场景，移除穿衣镜；玄关添加全身镜；图 4 镜子场景改为玄关
+- v7：将玄关和客厅合并为同一个连续空间，添加详细的空间布局图和家具相对位置
+- v8：将窗户改为一整面阳台落地窗，贯穿整个客厅区域

@@ -17,6 +17,33 @@
 
 ## 构图与镜头
 
+### 主体姿态和位置关系必须详细描述，不能省略
+
+模型不会自动理解主体在画面中的具体姿态和位置，必须明确描述：
+
+**必须包含的要素：**
+1. **视角方向**：仰拍/俯拍/平视（low angle / high angle / eye level）
+2. **主体朝向**：主体哪个部位朝向镜头（belly facing camera / head facing camera / side view）
+3. **主体姿态**：具体动作和身体状态（diving / hovering / perched / wings spread / wings tucked）
+4. **画面位置**：主体在画面中的位置（upper two-thirds of frame / at the bottom of frame / centered）
+5. **各部位的空间关系**：头在哪、翅膀如何展开、身体角度
+
+**错误示例（太模糊）：**
+```
+golden eagle flying through clouds, wings spread, rim lighting
+```
+
+**正确示例（详细）：**
+```
+low angle looking up at a golden eagle diving through clouds. 
+The eagle's belly facing the camera, head pointing downward in diving direction (at the bottom of frame). 
+Wings spread horizontally across the upper two-thirds of the frame.
+```
+
+**教训来源：** S01-02 镜头，最初提示词没有明确鹰的腹部朝向镜头、头在画面下方，导致生成的图像姿态不符合"俯冲"的叙事要求。
+
+适用：所有有主体的镜头，尤其是动物、人物、飞行物体等需要精确姿态控制的场景。
+
 ### 正对拍摄需要明确打破透视默认行为
 
 模型默认会加透视感让画面"有深度"，正对拍摄必须主动抑制。
