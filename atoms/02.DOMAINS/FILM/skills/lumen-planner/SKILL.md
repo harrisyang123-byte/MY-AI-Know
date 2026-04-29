@@ -99,3 +99,4 @@ Step 1: 分析 → Step 2: 策略 → Step 3: 增强 → Step 4: 执行 → Step
 | [03_workflow/](03_workflow/) | 5步工作流、核心原则 |
 | [04_skills/](04_skills/) | 7个核心技能详细文档 |
 | [05_integration/](05_integration/master_prompt.md) | 整合后的完整系统提示词 |
+| [06_lessons/](06_lessons/collaboration-log.md) | 磨合日志 — 协作中积累的原则和常见坑 |
