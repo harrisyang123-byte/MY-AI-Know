@@ -31,14 +31,9 @@
 | 6 | S01-03-3 | 黄龙旗·海面船上（飞行路径中间点） | S01-03-1 |
 | 7 | S01-03-4 | 定远舰甲板（尾帧） | S01-03-1 |
 | 8 | S01-04 | 鹰盘旋 | S01-02-1 + S01-03-1 |
-| 9 | S01-05 | 日军包围线 | S01-03-1 |
-| 10 | S01-06-1 | 翼尖撞击前 | S01-02-1 |
-| 11 | S01-06-2 | 翼尖撞击中 | S01-06-1 |
-| 12 | S01-06-3 | 翼尖撞击后 | S01-06-1 |
-| 13 | S01-07-1 | 鹰下坠首帧 | S01-02-1 |
-| 14 | S01-07-2 | 鹰下坠尾帧 | S01-07-1 + S01-03-1 |
+| 9 | S01-05 | 鹰失控坠落 | S01-02-1 |
 
-**总计：14 张图**
+**总计：9 张图**
 
 ---
 
@@ -228,132 +223,22 @@ clear weather, blue sky, bright scene, no snow, eagle flapping wings, active fle
 
 ---
 
-### 【S01-05】日军合围线·雪雾中的威胁
+### 【S01-05】鹰失控坠落
 
 **正向提示词：**
 ```
-远景镜头，鹰 POV，高角度俯拍日军舰队。日军舰船分散包围（非整齐排列的半圆），部分被雪雾遮蔽。舰身浅灰/白色（新舰vs旧舰的视觉区分）。烟囱有烟（在运作中）。雪雾让远处模糊，看不到完整包围圈，只能看到部分舰船。外海深蓝色稍亮有微浪。大雪纷飞，能见度低。
+中近景镜头，鹰自由落体式坠落。身体几乎垂直向下，头部朝下，无法控制下沉方向——翅膀完全失去升力功能，被重力和气流扯开，左翼半展僵硬无法收拢，右翼（被击中侧）更无力，向外下方拖曳。身体有不稳定的轻微旋转/螺旋趋势，像一片失去控制的叶子。右翼外侧有一道弹道擦痕——羽毛沿弹道方向被削断、折弯、缺失，形成一条斜向伤口线，周围羽毛被血黏成暗色湿斑。背景：上方深灰偏蓝天空和残云，下方远处海面和舰队剪影（占画面下部约1/3）。大雪纷飞，雪花因下坠速度略呈斜线。
 
-long shot, eagle POV, high angle aerial view of Japanese fleet. Japanese warships dispersed in encirclement (not neatly arranged semicircle), partially obscured by snow fog. Ship hulls in light gray/white (visual distinction of new vs old ships). Smoke from chimneys (in operation). Snow fog blurs the distance, cannot see complete encirclement, only partial ships visible. Open sea in deep blue slightly brighter with light waves. Heavy snow falling, low visibility.
-
-hyperrealistic, in the visual style of Chang'an 30000 Miles, Lights Animation Studio style, cinematic 3D rendering, high quality CGI, Chinese aesthetic in 3D, cold desaturated color palette, volumetric lighting, atmospheric depth, 35mm lens, f/4.0, photorealistic, 8K
-```
-
-**负向提示词：**
-```
-晴天, 蓝天, 明亮, 无雪, 整齐排列的军舰, 清晰可见的包围圈, 温暖色调, 高饱和度,
-clear weather, blue sky, bright scene, no snow, neatly arranged warships, clearly visible encirclement, warm colors, high saturation, cartoon style, anime style
-```
-
-**参考图：** 需要（使用 S01-03-1 作为空间参考）
-**分辨率：** 1K（16:9）
-
----
-
-### 【S01-06-1】翼尖撞击前
-
-**正向提示词：**
-```
-特写镜头，鹰翼特写。鹰翼逆光金色边缘，羽毛整齐排列，滑翔姿态完美。大雪纷飞。翼尖占满画面三分之二以上，羽毛纹理清晰可见。
-
-close-up shot, eagle wing tip. Eagle wing with backlit golden edge, feathers neatly arranged, perfect gliding posture. Heavy snow falling. Wing tip occupies more than two-thirds of frame, feather texture clearly visible.
+medium close-up shot, eagle in freefall. Body nearly vertical with head pointing down, unable to control descent - wings completely lost lift function, pulled open by gravity and airflow, left wing half-extended stiffly unable to tuck in, right wing (hit side) even weaker, dragging outward and downward. Body showing unstable slight rotation/spiraling tendency, like a leaf out of control. Right wing outer area has a visible bullet graze trail - feathers sheared off, bent, and missing along a diagonal wound track, surrounding feathers matted with blood into a dark wet patch. Background: dark gray-blue sky and remnant clouds in upper portion, distant sea surface and fleet silhouettes in lower portion (occupying about bottom 1/3 of frame). Heavy snow falling, snowflakes slightly diagonal due to falling speed.
 
 hyperrealistic, in the visual style of Chang'an 30000 Miles, Lights Animation Studio style, cinematic 3D rendering, high quality CGI, Chinese aesthetic in 3D, cold desaturated color palette, volumetric lighting, physically accurate lighting, 85mm lens, f/2.8, photorealistic, 8K
 ```
 
 **负向提示词：**
 ```
-明亮画面, 均匀布光, 多光源, 温暖色调, 蓝天, 无雪, 混乱的羽毛,
-bright scene, even lighting, multiple light sources, warm colors, blue sky, no snow, disordered feathers, cartoon style, anime style
+明亮画面, 均匀布光, 多光源, 温暖色调, 蓝天, 无雪, 舒展的翅膀, 优雅的姿态, 主动收翅, 水平飞行, 滑翔,
+bright scene, even lighting, multiple light sources, warm colors, blue sky, no snow, spread wings, graceful posture, actively folding wings, level flight, gliding, cartoon style, anime style
 ```
 
 **参考图：** 需要（使用 S01-02-1 作为金雕参考）
-**分辨率：** 1K（16:9）
-
----
-
-### 【S01-06-2】翼尖撞击中
-
-**正向提示词：**
-```
-极特写镜头，鹰翼尖撞击瞬间。流弹切入翼尖，空气波纹，雪花被气流卷起。翼尖外端三根飞羽根部断裂，羽毛开始炸开向四周散落。逆光金色边缘，羽毛散落时每一片都短暂反射逆光。
-
-extreme close-up shot, eagle wing tip impact moment. Stray bullet cutting into wing tip, air ripples, snowflakes being swept up by airflow. Three flight feathers at outer wing tip breaking at root, feathers starting to explode outward. Backlit golden edge, each scattered feather briefly reflecting the backlight.
-
-hyperrealistic, in the visual style of Chang'an 30000 Miles, Lights Animation Studio style, cinematic 3D rendering, high quality CGI, Chinese aesthetic in 3D, cold desaturated color palette, volumetric lighting, physically accurate lighting, motion blur, 85mm lens, f/2.8, photorealistic, 8K
-```
-
-**负向提示词：**
-```
-明亮画面, 均匀布光, 多光源, 温暖色调, 蓝天, 无雪, 完整的羽毛,
-bright scene, even lighting, multiple light sources, warm colors, blue sky, no snow, intact feathers, cartoon style, anime style
-```
-
-**参考图：** 需要（使用 S01-06-1 作为参考）
-**分辨率：** 1K（16:9）
-
----
-
-### 【S01-06-3】翼尖撞击后
-
-**正向提示词：**
-```
-特写镜头，羽毛炸开后。金色碎片飘散，翼尖断裂处。背景深灰偏蓝天空。大雪纷飞。羽毛散落在空中，每一片都反射逆光。
-
-close-up shot, after feather explosion. Golden fragments scattering, broken wing tip. Background dark gray-blue sky. Heavy snow falling. Feathers scattered in air, each reflecting backlight.
-
-hyperrealistic, in the visual style of Chang'an 30000 Miles, Lights Animation Studio style, cinematic 3D rendering, high quality CGI, Chinese aesthetic in 3D, cold desaturated color palette, volumetric lighting, physically accurate lighting, 85mm lens, f/2.8, photorealistic, 8K
-```
-
-**负向提示词：**
-```
-明亮画面, 均匀布光, 多光源, 温暖色调, 蓝天, 无雪, 整齐的羽毛,
-bright scene, even lighting, multiple light sources, warm colors, blue sky, no snow, neat feathers, cartoon style, anime style
-```
-
-**参考图：** 需要（使用 S01-06-1 作为参考）
-**分辨率：** 1K（16:9）
-
----
-
-### 【S01-07-1】鹰下坠首帧
-
-**正向提示词：**
-```
-中近景镜头，鹰开始下坠。翅膀开始折叠（不对称，被击中的右翼折叠更快），整个身形在收缩。背景天空和残云，大雪纷飞。鹰的姿态与盘旋时的舒展完全不同——狼狈的、失控的。
-
-medium close-up shot, eagle beginning to fall. Wings starting to fold (asymmetrically, the hit right wing folding faster), entire body contracting. Background sky and remnant clouds, heavy snow falling. Eagle's posture completely different from the graceful circling - disheveled, out of control.
-
-hyperrealistic, in the visual style of Chang'an 30000 Miles, Lights Animation Studio style, cinematic 3D rendering, high quality CGI, Chinese aesthetic in 3D, cold desaturated color palette, volumetric lighting, physically accurate lighting, 85mm lens, f/2.8, photorealistic, 8K
-```
-
-**负向提示词：**
-```
-明亮画面, 均匀布光, 多光源, 温暖色调, 蓝天, 无雪, 舒展的翅膀, 优雅的姿态,
-bright scene, even lighting, multiple light sources, warm colors, blue sky, no snow, spread wings, graceful posture, cartoon style, anime style
-```
-
-**参考图：** 需要（使用 S01-02-1 作为金雕参考）
-**分辨率：** 1K（16:9）
-
----
-
-### 【S01-07-2】鹰下坠尾帧
-
-**正向提示词：**
-```
-中近景镜头，鹰继续下坠。翅膀折叠更多，背景放大后显示海面/舰队/浮冰。大雪因下坠速度而在画面中形成线条。鹰影在快速缩小。
-
-medium close-up shot, eagle continuing to fall. Wings folded more, background enlarged showing sea surface/fleet/floating ice. Heavy snow forming lines in frame due to falling speed. Eagle silhouette rapidly shrinking.
-
-hyperrealistic, in the visual style of Chang'an 30000 Miles, Lights Animation Studio style, cinematic 3D rendering, high quality CGI, Chinese aesthetic in 3D, cold desaturated color palette, volumetric lighting, physically accurate lighting, motion blur, 85mm lens, f/2.8, photorealistic, 8K
-```
-
-**负向提示词：**
-```
-明亮画面, 均匀布光, 多光源, 温暖色调, 蓝天, 无雪, 舒展的翅膀, 优雅的姿态, 静止画面,
-bright scene, even lighting, multiple light sources, warm colors, blue sky, no snow, spread wings, graceful posture, static frame, cartoon style, anime style
-```
-
-**参考图：** 需要（使用 S01-07-1 和 S01-03-1 作为参考）
 **分辨率：** 1K（16:9）

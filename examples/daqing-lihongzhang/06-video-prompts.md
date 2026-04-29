@@ -52,32 +52,18 @@ Eagle circling with wings spread, gliding without flapping. Arc shot following e
 
 ---
 
-### 【S01-05 视频提示词】
+### 【S01-05 黑场·闷响】
 
-提示词：
-Eagle POV. Slow pan right from inside bay toward outer sea, very slight push in. Smoke rising from chimneys.
-
-参考图：图一=S01-05 日军包围线
-时长：9秒
+**无需生成视频。** Hard Cut 黑场3秒，声音事件：一声闷响（低频80-200Hz，0.3秒）→ 1.5秒绝对静默 → 1.2秒极轻风声残响。
 
 ---
 
-### 【S01-06 视频提示词】
+### 【S01-05 坠落视频提示词】
 
 提示词：
-Sudden rapid push in to extreme close-up over 1 second. Three flight feathers at wing tip break at root and explode outward in slow motion at 0.5x speed for 0.8 seconds. Frame wobbles briefly.
+Eagle in freefall, body nearly vertical head-down, spiraling slightly out of control. Wings pulled open by gravity, right wing dragging lower with visible graze wound. Sea surface with gentle wave motion, ships swaying slightly. Follow shot with tilt down + accelerating push in. Snow streaking into diagonal lines.
 
-参考图：图一=S01-06-1 撞击前，图二=S01-06-3 撞击后
-时长：4秒
-
----
-
-### 【S01-07 视频提示词】
-
-提示词：
-Eagle falling. Wings folding asymmetrically (right wing faster). Follow shot with tilt down + accelerating push in. Snow streaking into lines due to falling speed.
-
-参考图：图一=S01-07-1 下坠首帧，图二=S01-07-2 下坠尾帧
+参考图：图一=S01-05 鹰失控坠落
 时长：5秒
 
 ---
@@ -91,8 +77,7 @@ Eagle falling. Wings folding asymmetrically (right wing faster). Follow shot wit
 | S01-03-B | 8秒 | S01-03-1 海湾全景 | S01-03-2 克虏伯巨炮 |
 | S01-03-C+D | 21秒 | S01-03-2 克虏伯巨炮 | S01-03-3 黄龙旗·海面船上 |
 | S01-04 | 9秒 | S01-04 鹰盘旋 | 无 |
-| S01-05 | 9秒 | S01-05 日军包围线 | 无 |
-| S01-06 | 4秒 | S01-06-1 撞击前 | S01-06-3 撞击后 |
-| S01-07 | 5秒 | S01-07-1 下坠首帧 | S01-07-2 下坠尾帧 |
+| S01-05 黑场 | 3秒 | 无 | 无 |
+| S01-05 坠落 | 5秒 | S01-05 鹰失控坠落 | 无 |
 
-**总时长：** 78秒（不含黑场）
+**总时长：** 65秒（不含黑场字幕）
