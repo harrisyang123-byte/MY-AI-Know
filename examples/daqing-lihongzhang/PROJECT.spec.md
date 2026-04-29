@@ -2,6 +2,7 @@
 title: 大清李鸿章 — 电影创作项目
 description: 使用 creative-architect 完整流程创作的电影项目
 status: in_progress
+agent: creative-architect
 ---
 
 # 大清李鸿章 — 项目 Spec
@@ -83,6 +84,16 @@ status: in_progress
 ### 阶段四：分镜构思 🔄 进行中
 
 **执行框架：** creative-architect 阶段四
+
+**分镜稿状态（04-directing.md）：**
+- ✓ S01（威海卫）— 11镜，~95秒
+- ✓ S02（总理衙门审讯）— 7镜，~2分30秒
+- ✓ S03（江宁贡院初遇）— 7镜，~3分钟
+
+**图像/视频提示词生成进度（Lumen Planner）：**
+- S02-01~02 — 已完成
+- S02-03 — 🔄 视频提示词生成中（Seedance），已修正门位置+双人物共存问题，待生成验证
+- S02-04~07 — ⏳ 待开始
 
 **已完成场景：**
 - ✓ S01（威海卫）— 7个镜头，约1分钟
@@ -183,5 +194,4 @@ examples/daqing-lihongzhang/
 新对话开始时：
 1. 读取本文件，确认当前进度和待完成场景
 2. 调用 `creative-architect` agent，按阶段四 checklist 继续执行
-3. 台词按需从飞书提取（参考 #[[file:00-scene-mapping.md]] 的场景对应关系）
-4. 如需修改艺术指导，参考 #[[file:03-art-direction-process.md]]
+3. 如需修改艺术指导，参考 #[[file:03-art-direction-process.md]]
