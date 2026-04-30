@@ -6,7 +6,7 @@
   "env": {
     "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
     "ANTHROPIC_API_KEY": "sk-5c057329d4dc42b48b0fe1e0a4684b51",
-    "ANTHROPIC_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro",
     "PROJECT_NAME": "AI-atom"
   },
   "hooks": {
