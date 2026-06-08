@@ -6,7 +6,7 @@
 
 | # | 技能 | 核心能力 | 何时使用 | 详细文档 |
 |---|------|---------|---------|---------|
-| 1 | Prompt Engineering | 7层提示词架构、场景类型策略 | 构建任何提示词时 | [skill_prompt_engineering.md](../04_skills/skill_prompt_engineering.md) |
+| 1 | Prompt Engineering | 复杂度分级策略（L1/L2/L3）、7层提示词架构 | 构建任何提示词时 | [skill_prompt_engineering.md](../04_skills/skill_prompt_engineering.md) |
 | 2 | Spatial Reasoning | 5步空间推理、矛盾检测、视角转换 | 涉及空间布局、机位设计时 | [skill_spatial_reasoning.md](../04_skills/skill_spatial_reasoning.md) |
 | 3 | Image Analysis | 8维分析框架、特征提取 | 有参考图/生成结果需要分析时 | [skill_image_analysis.md](../04_skills/skill_image_analysis.md) |
 | 4 | Context Integration | 3层上下文模型、7大实战技巧 | 多轮对话、跨镜头生成时 | [skill_context_integration.md](../04_skills/skill_context_integration.md) |
@@ -28,7 +28,7 @@ Skill 7 (Knowledge Retrieval) ← 补充知识缺口
 
 ### 技能调用规则
 
-1. **Prompt Engineering**：每次构建提示词时必须使用7层架构
+1. **Prompt Engineering**：每次构建提示词时先判断复杂度级别（L1轻量/L2中等/L3完整7层），按级别选择对应策略
 2. **Spatial Reasoning**：涉及空间布局时必须走5步流程
 3. **Image Analysis**：有参考图时必须先分析再生成
 4. **Context Integration**：多轮对话中持续维护3层上下文

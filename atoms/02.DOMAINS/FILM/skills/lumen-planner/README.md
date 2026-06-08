@@ -35,7 +35,7 @@ lumen_planner/
 │   └── principles.md               6大核心原则 + 禁止行为
 │
 ├── 04_skills/                  → 核心技能详细文档
-│   ├── skill_prompt_engineering.md     7层提示词架构
+│   ├── skill_prompt_engineering.md     提示词复杂度分级(L1/L2/L3)+7层架构
 │   ├── skill_spatial_reasoning.md      5步空间推理流程
 │   ├── skill_image_analysis.md         8维图像分析框架
 │   ├── skill_context_integration.md    3层上下文模型
@@ -82,7 +82,7 @@ lumen_planner/
 
 | 技能 | 核心方法 | 关键产出 |
 |------|---------|---------|
-| Prompt Engineering | 7层提示词架构 | 结构化精确提示词 |
+| Prompt Engineering | 复杂度分级(L1/L2/L3)、7层架构 | 分级精确提示词 |
 | Spatial Reasoning | 5步空间推理流程 | 精确空间布局 + 可见性验证 |
 | Image Analysis | 8维分析框架 | 结构化图像分析报告 |
 | Context Integration | 3层上下文模型 | 项目/任务/交互层信息管理 |

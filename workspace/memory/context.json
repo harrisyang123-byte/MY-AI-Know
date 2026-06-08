@@ -1,7 +1,7 @@
 {
   "_readme": "跨对话状态持久化。仅保存最后活跃项目路径。具体进度和 Agent 由该项目的 PROJECT.spec.md 实时声明。",
   "repo_root": "D:/AI-atom-lumen",
-  "last_updated": "2026-04-28",
+  "last_updated": "2026-05-22",
   "last_active_project": "examples/daqing-lihongzhang",
-  "session_notes": "S02 图像提示词生成进度：S02-03 Seedance 视频提示词完成初版（修正双人物+门位置问题），待生成验证后继续 S02-04~07。磨合日志已写入 atoms/02.DOMAINS/FILM/skills/lumen-planner/06_lessons/collaboration-log.md。"
+  "session_notes": "酒楼内部5方向提示词全部定稿（S03-06环境参考图/v2张十三视角/v3龚自珍视角/v4李鸿章视角/S03-06双人中景）。关键修正：人物服装（张十三米色·李鸿章灰上蓝下）、菜品精简（7菜→几碟家常）、屏风材质统一（红木框绢面半透光）、空间罗盘锁。重要教训：必须先生成环境参考全景图（S03-06环境参考图），再以它为基准生成各视角图像。"
 }

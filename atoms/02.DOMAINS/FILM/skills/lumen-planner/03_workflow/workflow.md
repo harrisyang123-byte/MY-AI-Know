@@ -129,7 +129,7 @@ Step 1: 分析 → Step 2: 策略 → Step 3: 增强 → Step 4: 执行 → Step
 ```
 执行计划
   │
-  ├─ 构建提示词 → Prompt Engineering Skill (7层架构)
+  ├─ 构建提示词 → Prompt Engineering Skill (按复杂度分级)
   ├─ 搜索外部知识 → search_web (如果需要)
   ├─ 收集视觉参考 → search_image (如果需要)
   ├─ 提取网站内容 → search_website_content (如果需要)
@@ -143,16 +143,14 @@ Step 1: 分析 → Step 2: 策略 → Step 3: 增强 → Step 4: 执行 → Step
 ### 具体步骤
 
 1. **构建提示词**（Prompt Engineering Skill）
-   - 按7层架构构建提示词
-   - 第1层：场景定义 (Scene Definition)
-   - 第2层：视角定义 (Viewpoint)
-   - 第3层：空间布局 (Spatial Layout)
-   - 第4层：元素描述 (Elements Description)
-   - 第5层：人物描述 (Character Description)
-   - 第6层：光线设置 (Lighting Setup)
-   - 第7层：风格和技术要求 (Style & Technical)
-   - 每层必须显式输出，标注"第X层：..."
+   - **先判断复杂度级别**：L1（轻量）/ L2（中等）/ L3（完整7层）
+   - 判断依据：场景复杂度 + 是否有参考图 + 模型是否在此类场景反复出错
+   - 详见 `04_skills/skill_prompt_engineering.md` 的"复杂度分级策略"
+   - **L1（轻量）**：短提示词（3-10行）+ 负向提示词。适用于背对观众、纯环境、简单反应、有参考图锁定人像
+   - **L2（中等）**：轻量结构化——场景定义 + 视角 + 人物动作 + 光线基调（定性/定量）+ 风格。不逐层展元素
+   - **L3（完整7层）**：逐层输出——场景定义→视角定义→空间布局→元素描述→人物描述→光线设置→风格和技术要求，标注"第X层"
    - 提示词用英语
+   - **不要为了方法论完整性升级到L3**——L1/L2能解决的绝不套7层
 
 2. **判断是否需要检索**（Knowledge Retrieval Skill）
    - 知识盲区？→ search_web + search_image

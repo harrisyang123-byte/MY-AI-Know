@@ -88,7 +88,63 @@ AI的工作方式：
 
 ---
 
-## 7层提示词架构
+## 提示词复杂度分级策略 ⭐
+
+**核心原则：提示词复杂度必须匹配场景复杂度。** 不是所有镜头都需要完整7层架构。
+
+### 三级复杂度
+
+| 级别 | 适用场景 | 输出风格 |
+|------|---------|---------|
+| **L1 轻量级** | 背对观众、纯环境、单一人物简单反应、有参考图锁定人像 | 短提示词（3-10行英文），不拆层 |
+| **L2 中等** | 双人对话、标准中景/全景、有参考图的多人物 | 轻量结构（场景+视角+人物动作+光线+风格），不逐层展元素 |
+| **L3 完整7层** | 多人物精准空间调度、多光源量化控制、模型反复出错 | 完整7层逐层输出 |
+
+### 级别选择决策树
+
+```
+这个场景最大的视觉不确定是什么？
+├── 只是"拍到即可"，构图简单（如背对、俯拍、反应镜头）
+│   └── → L1：用户原话提炼 + 负向提示词
+│
+├── 有参考图，需要在新角度下保持一致性
+│   └── → L1/L2：参考图锁定 + 增量描述 + 负向一致性锁
+│
+├── 需要精确控制空间关系（位置、比例、景深）
+│   └── → L2：场景定义 + 空间关系 + 光线 + 风格
+│
+└── 模型频繁犯错（反复放错位置、人物跑偏、光线不符）
+    └── → L3：完整7层逐层约束
+```
+
+### 关键判断：不要为了方法论完整性升级
+
+- L1 做得好的场景，不要强行套 7 层
+- 提示词的目的不是展示方法论，是让模型理解并生成正确图像
+- 有参考图时天然倾向 L1/L2——参考图本身就是最强约束
+- 只有模型确实理解不了简单描述时，才升级复杂度
+
+### L1 示例风格
+```
+【中文（构思阶段用）】
+二人站在楼门口的双人中景。面向牌匾，背向观众。周围能看到部分行人。
+
+【英文提示词（最终输出用）】
+Medium two-shot, two figures standing outside a tavern entrance,
+facing the plaque, backs to the viewer,
+partial pedestrians visible around them.
+
+【负向提示词】
+figures facing camera, visible faces, stickers, cutout effect,
+composited look, mismatched lighting, flat characters, cartoon figures
+```
+不需要逐层展开场景定义、空间布局、元素材质。模型能理解"back to viewer"和"tavern entrance"。
+
+---
+
+## 完整7层提示词架构（L3）
+
+以下架构仅适用于高复杂度场景。**非必选项，是工具箱。**
 
 ### 第1层：场景定义 (Scene Definition)
 
@@ -698,12 +754,72 @@ impossible perspective, floating furniture, wrong proportions,
 inconsistent lighting, flat 2D look, cartoon style
 ```
 
+**有参考图时的一致性控制（关键！）**：
+
+当提示词基于某张参考图生成新角度/新机位时，模型容易自由发挥改变物体外观。必须用负向提示词锁定参考图的视觉基准。
+
+```
+# 物体外观锁定 — 阻止模型改变参考图中已有物体的样子
+different shape, different color, different texture,
+different material, different finish, different style,
+wrong proportions, redesigned, reinterpreted,
+variation of, alternative version
+
+# 空间一致性 — 阻止空间关系变化
+different layout, different arrangement, different position,
+rearranged furniture, moved objects, changed placement,
+wrong perspective, impossible perspective, inconsistent spatial relationship
+
+# 光线一致性 — 阻止光源变化
+different lighting, changed lighting, wrong light direction,
+different color temperature, wrong shadow direction,
+inconsistent shadows, missing shadows, extra light sources
+
+# 人物/道具一致性
+different character, changed appearance, inconsistent design,
+wrong clothing, different era, mixed styles,
+extra objects, missing objects, added elements
+```
+
+### 多角度一致性生成策略（有参考图时）
+
+当需要从参考图推导新机位时：
+
+```
+Step 1: 识别参考图中的"锁定要素"
+   - 物体外观（颜色、材质、形状、纹理）
+   - 空间关系（物体间的相对位置）
+   - 光线特征（光源方向、色温、光比）
+   - 色彩基调（主色调、饱和度、明度）
+
+Step 2: 构建一致性负向提示词
+   - 从"锁定要素"的反面构建
+   - 明确阻止模型改变这些要素
+
+Step 3: 提示词策略
+   - 锁定要素 → 用 "exactly as shown in the reference image" 声明
+   - 增量信息 → 只写机位/景别/角度的变化
+   - 负向提示词 → 阻止模型自由发挥改变锁定要素
+
+Step 4: 验证
+   - 生成结果与参考图做一致性检查
+   - 物体外观是否一致？空间关系是否一致？光线是否一致？
+   - 如不一致 → 强化负向提示词中对应的锁定项
+```
+
 ---
 
 ## 提示词质量检查清单
 
-每次构建提示词后，检查以下项目：
+每次构建提示词后，检查以下项目（按复杂度级别检查）：
 
+### L1 检查项
+- □ 核心语义是否明确？（模型能否一眼理解画面内容）
+- □ 负向提示词是否覆盖常见错误？
+- □ 是否有冗余描述？（有 → 删）
+- □ 是否用英文？（最终提示词）
+
+### L2/L3 额外检查项
 - □ 第1层场景定义是否放在最前面？
 - □ 第2层视角是否使用绝对方向（东西南北）？
 - □ 第3层空间是否有具体数字？
