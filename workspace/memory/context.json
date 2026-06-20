@@ -1,7 +1,7 @@
 {
   "_readme": "跨对话状态持久化。仅保存最后活跃项目路径。具体进度和 Agent 由该项目的 PROJECT.spec.md 实时声明。",
   "repo_root": "D:/AI-atom-lumen",
-  "last_updated": "2026-05-22",
-  "last_active_project": "examples/daqing-lihongzhang",
-  "session_notes": "酒楼内部5方向提示词全部定稿（S03-06环境参考图/v2张十三视角/v3龚自珍视角/v4李鸿章视角/S03-06双人中景）。关键修正：人物服装（张十三米色·李鸿章灰上蓝下）、菜品精简（7菜→几碟家常）、屏风材质统一（红木框绢面半透光）、空间罗盘锁。重要教训：必须先生成环境参考全景图（S03-06环境参考图），再以它为基准生成各视角图像。"
+  "last_updated": "2026-06-16",
+  "last_active_project": "examples/xiaohongshu-couple-stories",
+  "session_notes": "小红书情侣故事项目：阶段一初始化完成。暖暖(ENFJ)×陆则(INTJ)角色设定确认，60秒反转叙事模板确认。阶段二第一期选题已定——飞天大蟑螂（床上刷手机→飞蟑螂→陆则脱敏训练→兜住→骄傲收尾），细节待明天优化。"
 }
